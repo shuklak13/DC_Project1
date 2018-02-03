@@ -42,6 +42,7 @@ class Node{
     String uid, port;
     String hostname;
     String[] neighbors;
+    int round;
 
     public Node(String u, String hn, String p, String[] nghbrs){
         uid = u;
