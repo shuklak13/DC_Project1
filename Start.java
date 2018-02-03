@@ -1,8 +1,6 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.*;
-//import javafx.scene.Node;
-
 
 public class Start {
     public static void main(String[] args){
@@ -12,12 +10,6 @@ public class Start {
             while(sc.hasNext()){
                 String[] params = sc.nextLine().trim().split("\\s+");
                 
-                System.out.println("\n\nNEWLINE");
-                StringBuilder sb = new StringBuilder();
-                for(String param: params)
-                    sb.append(param+"    ");
-                System.out.println(sb.toString());
-                System.out.println(params.length);
                 if(!(params[0].equals("#") || params.length<1)){
                     if(numNodes==0)
                         numNodes = Integer.parseInt(params[0]);
