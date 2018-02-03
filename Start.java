@@ -62,7 +62,11 @@ class Node{
         hostname = hn;
         port = p;
         neighbors = nghbrs;
-        try	{
+        startServer();
+        for(Node neigbhor: neighbors)
+            startSender(neighbor);
+
+        /*try	{
 			ServerSocket serverSock = new ServerSocket(port);			
 			while(true)
 			{
@@ -78,8 +82,59 @@ class Node{
 			}
 		} catch(IOException ex) {
 			ex.printStackTrace();
-		}
+		}*/
         // TO-DO: CREATE SOCKET FOR EACH NEIGHBOR
+    }
+
+    public void startSender() {
+        (new Thread() {
+            @Override
+            public void run() {
+                try {
+                    Socket s = new Socket("localhost", port);
+                    BufferedWriter out = new BufferedWriter(
+                            new OutputStreamWriter(s.getOutputStream()));
+
+                    while (true) {
+                        out.write();
+                        out.newLine();
+                        out.flush();
+
+                        Thread.sleep(200);
+                    }
+
+                } catch (UnknownHostException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+    }
+
+    public void startServer() {
+        (new Thread() {
+            @Override
+            public void run() {
+                ServerSocket ss;
+                try {
+                    ss = new ServerSocket(port);
+
+                    Socket s = ss.accept();
+
+                    BufferedReader in = new BufferedReader(
+                            new InputStreamReader(s.getInputStream()));
+                    String line = null;
+                    while ((line = in.readLine()) != null) {
+                        System.out.println(line);
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }).start();
     }
 
     public void print(){
