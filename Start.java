@@ -13,23 +13,16 @@ public class Start {
             System.out.println("File " + args[1] + " not found");
             System.exit(0);
         }
+        for(Node node: nodes)
+            node.connectToNeighbors();
         Node leader = peleg(nodes);
         BFSTree tree = bfsTree(leader);
-    }
-    public static Node peleg(Nodes nodes){
-        // TO-DO
-        return nodes.get(0);
-    }
-    public static BFSTree bfsTree(Node root){
-        // TO-DO
-        return BFSTree(root);
     }
     public static Node[] parseLines(Scanner sc){
         int numNodes = 0;
         ArrayList<Node> nodes = new ArrayList<>();
         while(sc.hasNext()){
             String[] params = sc.nextLine().trim().split("\\s+");
-            
             if(!(params[0].equals("#") || params.length<1)){
                 if(numNodes==0)
                     numNodes = Integer.parseInt(params[0]);
@@ -48,7 +41,17 @@ public class Start {
         System.arraycopy(nodeParams, 3, neighbors, 0, nodeParams.length-3);
         return new Node(uid, hostname, port, neighbors);
     }
+    public static Node peleg(Nodes nodes){
+        // TO-DO
+        return nodes.get(0);
+    }
+    public static BFSTree bfsTree(Node root){
+        // TO-DO
+        return BFSTree(root);
+    }
 }
+
+
 
 class Node{
     String uid, port;
@@ -84,6 +87,10 @@ class Node{
 			ex.printStackTrace();
 		}*/
         // TO-DO: CREATE SOCKET FOR EACH NEIGHBOR
+    }
+
+    public boolean connectToNeighbors(){
+        // TO-DO
     }
 
     public void startSender() {
