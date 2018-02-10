@@ -3,13 +3,12 @@ package dc_project1;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.*;
-import java.net.*;
 
 public class DC_Project1 {
     static boolean test = false;
     public static void main(String[] args){
         ArrayList<Node> nodes;
-        if(args.length>=3 && args[1].equalsIgnoreCase("test")){
+        if(args.length>=2 && args[1].equalsIgnoreCase("test")){
           test = true;
           System.out.println("Running in test (host will be localhost)");
         }
@@ -17,8 +16,8 @@ public class DC_Project1 {
             nodes = parseLines(sc);
             for(Node node: nodes)
                 node.connectToNeighbors();
-            Node leader = peleg(nodes);
-            BFSTree tree = bfsTree(leader);
+            //Node leader = peleg(nodes);
+            //BFSTree tree = bfsTree(leader);
         }
         catch(IOException e){
             System.out.println("File " + args[1] + " not found");
@@ -44,18 +43,10 @@ public class DC_Project1 {
         String uid = nodeParams[0];
         String hostname = nodeParams[1];
         String port = nodeParams[2];
-        String[] neighbors = new String[nodeParams.length-3];
-        System.arraycopy(nodeParams, 3, neighbors, 0, nodeParams.length-3);
-        return new Node(uid, hostname, Integer.parseInt(port), neighbors, test);
+        int[] neighbors = new int[nodeParams.length-3];
+        for(int i=3; i<nodeParams.length; i++)
+            neighbors[i-3]=Integer.parseInt(nodeParams[i]);
+        return new Node(Integer.parseInt(uid), hostname, Integer.parseInt(port), neighbors, test);
     }
-    public static Node peleg(ArrayList<Node> nodes){
-        // TO-DO
-        for(Node node: nodes)
-          node.peleg();
-        return nodes.get(0);
-    }
-    public static BFSTree bfsTree(Node root){
-        // TO-DO
-        return new BFSTree(root);
-    }
+
 }

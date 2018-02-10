@@ -9,6 +9,6 @@ package dc_project1;
  *
  * @author romi
  */
-public class bfs {
+class Arraylist<T> {
     
 }

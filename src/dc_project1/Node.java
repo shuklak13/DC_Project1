@@ -17,9 +17,11 @@ class Node{
     String hostname;
     int[] neighbors;
     int round;
-    ArrayList<Message> buffer = new ArrayList<Message>();
+    ArrayList<PelegMessage> buffer = new ArrayList<PelegMessage>();
     Node leader;
     String algo = "peleg";
+    Peleg p1;
+    Bfs b1;
 
     public Node(int u, String hn, int p, int[] nghbrs, boolean test){
         uid = u;
@@ -36,31 +38,13 @@ class Node{
         // TO-DO
         for(int neigbhor: neighbors)
             startSender(neigbhor);
-            peleg p1 = new peleg(neighbors);
+            p1 = new Peleg(neighbors, uid);
+//            b1 = new Bfs(neighbors);
 
-        /*try	{
-			ServerSocket serverSock = new ServerSocket(port);			
-			while(true)
-			{
-				ClientManager clientmanager;
-				try {
-					clientmanager = new ClientManager(serverSock.accept());
-					Thread t = new Thread(clientmanager);
-					t.start();
-				} catch(IOException e) {
-					System.out.println("accept failed");
-					System.exit(100);
-				}				
-			}
-		} catch(IOException ex) {
-			ex.printStackTrace();
-		}*/
-        // TO-DO: CREATE SOCKET FOR EACH NEIGHBOR
-        
         return true;
     }
 
-    public void startSender(String neighbor) {
+    public void startSender(int neighbor) {
         (new Thread() {
             @Override
             public void run() {
@@ -118,66 +102,22 @@ class Node{
         System.out.println(sb.toString());
     }
 
-    public void send(Message msg){
-        // TO-DO
-        String sendMsg = msg.toString();
-        String message;
-		BufferedReader reader = null;
-		PrintWriter writer = null;
-
-		try	{
-			// Create a client socket and connect to server at 127.0.0.1 port 5000
-			Socket clientSocket = new Socket("localhost", 5000);
-			
-			/* Create BufferedReader to read messages from server. Input stream is in bytes. 
-				They are converted to characters by InputStreamReader.
-				Characters from the InputStreamReader are converted to buffered characters by BufferedReader.
-				This is done for efficiency purpose.
-			*/
-			reader = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
-
-			// PrintWriter is a bridge between character data and the socket's low-level output stream
-			writer = new PrintWriter(clientSocket.getOutputStream(), true);
-			
-		} catch(IOException ex) {
-			ex.printStackTrace();
-		}
-
-		try {
-			writer.println("Hello from Client");
-			message = reader.readLine();
-			System.out.println(message);
-		} catch(IOException e) {
-			System.out.println("Read failed");
-			System.exit(100);
-		}
-    }
-
     public String genMsg()
     {
         if (algo.equals("peleg"))
-            return peleg.genMsg();
-        else if (algo.equals("bfs"))
-            return bfs.getMsg();
+            return p1.genMsg();
+        //else if (algo.equals("bfs"))
+            //return b1.getMsg();
+        return null;
     }
 
     public void handleMsg(String m)
     {
         if (algo.equals("peleg"))
-            peleg.handleMsg(m);
-        else if (algo.equals("bfs"))
-            bfs.handleMsg(m);
+            p1.handleMsg(m);
+        //else if (algo.equals("bfs"))
+            //b1.handleMsg(m);
 
     }
-    
-    public void receive(){
-        // TO-DO
-        
-    }
-    
-    public Node peleg(){
-      // TO-DO
-      
-      return leader;
-    }
+   
 }
