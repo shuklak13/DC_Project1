@@ -18,10 +18,16 @@ class Node{
     String[] neighbors;
     int round;
     ArrayList<Message> buffer = new ArrayList<Message>();
+    Node leader;
 
     public Node(String u, String hn, int p, String[] nghbrs){
+    }
+    public Node(String u, String hn, int p, String[] nghbrs, boolean test){
         uid = u;
-        hostname = hn;
+        if(test)
+          hostname = "localhost";
+        else
+          hostname = hn;
         port = p;
         neighbors = nghbrs;
         startServer();
@@ -64,7 +70,7 @@ class Node{
                             new OutputStreamWriter(s.getOutputStream()));
 
                     while (true) {
-                        out.write();
+                        out.write("");
                         out.newLine();
                         out.flush();
 
@@ -89,9 +95,7 @@ class Node{
                 ServerSocket ss;
                 try {
                     ss = new ServerSocket(port);
-
                     Socket s = ss.accept();
-
                     BufferedReader in = new BufferedReader(
                             new InputStreamReader(s.getInputStream()));
                     String line = null;
@@ -156,6 +160,8 @@ class Node{
     }
     
     public Node peleg(){
-      return this;
+      // TO-DO
+      
+      return leader;
     }
 }

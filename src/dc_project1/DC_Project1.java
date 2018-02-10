@@ -6,9 +6,14 @@ import java.io.*;
 import java.net.*;
 
 public class DC_Project1 {
+    static boolean test = false;
     public static void main(String[] args){
         ArrayList<Node> nodes;
-        try(Scanner sc=new Scanner(new File("config.txt"))){
+        if(args.length>=3 && args[1].equalsIgnoreCase("test")){
+          test = true;
+          System.out.println("Running in test (host will be localhost)");
+        }
+        try(Scanner sc=new Scanner(new File(args[0]))){
             nodes = parseLines(sc);
             for(Node node: nodes)
                 node.connectToNeighbors();
@@ -41,7 +46,7 @@ public class DC_Project1 {
         String port = nodeParams[2];
         String[] neighbors = new String[nodeParams.length-3];
         System.arraycopy(nodeParams, 3, neighbors, 0, nodeParams.length-3);
-        return new Node(uid, hostname, Integer.parseInt(port), neighbors);
+        return new Node(uid, hostname, Integer.parseInt(port), neighbors, test);
     }
     public static Node peleg(ArrayList<Node> nodes){
         // TO-DO
