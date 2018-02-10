@@ -12,20 +12,25 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 
 class Node{
-    String uid, port;
+    String uid;
+    int port;
     String hostname;
     String[] neighbors;
     int round;
     ArrayList<Message> buffer = new ArrayList<Message>();
 
-    public Node(String u, String hn, String p, String[] nghbrs){
+    public Node(String u, String hn, int p, String[] nghbrs){
         uid = u;
         hostname = hn;
         port = p;
         neighbors = nghbrs;
         startServer();
-        for(Node neigbhor: neighbors)
-            startSender(neighbor);
+    }
+
+    public boolean connectToNeighbors(){
+        // TO-DO
+        for(String neigbhor: neighbors)
+            startSender(neigbhor);
 
         /*try	{
 			ServerSocket serverSock = new ServerSocket(port);			
@@ -45,13 +50,11 @@ class Node{
 			ex.printStackTrace();
 		}*/
         // TO-DO: CREATE SOCKET FOR EACH NEIGHBOR
+        
+        return true;
     }
 
-    public boolean connectToNeighbors(){
-        // TO-DO
-    }
-
-    public void startSender() {
+    public void startSender(String neighbor) {
         (new Thread() {
             @Override
             public void run() {
@@ -150,5 +153,9 @@ class Node{
     public void receive(){
         // TO-DO
         
+    }
+    
+    public Node peleg(){
+      return this;
     }
 }

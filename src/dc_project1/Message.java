@@ -5,7 +5,7 @@ class Message{
     int round;
     String sender, receiver;
 
-    public Message(String s, String r, string t, int rnd){
+    public Message(String s, String r, String t, int rnd){
         sender = s;
         receiver = r;
         round = rnd;

@@ -41,10 +41,12 @@ public class DC_Project1 {
         String port = nodeParams[2];
         String[] neighbors = new String[nodeParams.length-3];
         System.arraycopy(nodeParams, 3, neighbors, 0, nodeParams.length-3);
-        return new Node(uid, hostname, port, neighbors);
+        return new Node(uid, hostname, Integer.parseInt(port), neighbors);
     }
     public static Node peleg(ArrayList<Node> nodes){
         // TO-DO
+        for(Node node: nodes)
+          node.peleg();
         return nodes.get(0);
     }
     public static BFSTree bfsTree(Node root){
