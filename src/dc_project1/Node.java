@@ -12,17 +12,16 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 
 class Node{
-    String uid;
+    int uid;
     int port;
     String hostname;
-    String[] neighbors;
+    int[] neighbors;
     int round;
     ArrayList<Message> buffer = new ArrayList<Message>();
     Node leader;
+    String algo = "peleg";
 
-    public Node(String u, String hn, int p, String[] nghbrs){
-    }
-    public Node(String u, String hn, int p, String[] nghbrs, boolean test){
+    public Node(int u, String hn, int p, int[] nghbrs, boolean test){
         uid = u;
         if(test)
           hostname = "localhost";
@@ -35,8 +34,9 @@ class Node{
 
     public boolean connectToNeighbors(){
         // TO-DO
-        for(String neigbhor: neighbors)
+        for(int neigbhor: neighbors)
             startSender(neigbhor);
+            peleg p1 = new peleg(neighbors);
 
         /*try	{
 			ServerSocket serverSock = new ServerSocket(port);			
@@ -69,7 +69,8 @@ class Node{
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
                     while (true) {
-                        out.write(new Message(uid, neighbor, "", 0).toString());
+                        //out.write(new Message(uid, neighbor, "", 0).toString());
+                        out.write(genMsg().toString());
                         out.newLine();
                         out.flush();
                         Thread.sleep(200);
@@ -97,6 +98,7 @@ class Node{
                             new InputStreamReader(s.getInputStream()));
                     String line = null;
                     while ((line = in.readLine()) != null) {
+                        handleMsg(line);
                         System.out.println(line);
                     }
                 } catch (IOException e) {
@@ -111,7 +113,7 @@ class Node{
         sb.append(uid+" ");
         sb.append(hostname+" ");
         sb.append(port+" ");
-        for(String neighbor: neighbors)
+        for(int neighbor: neighbors)
             sb.append(neighbor+"    ");
         System.out.println(sb.toString());
     }
@@ -151,6 +153,23 @@ class Node{
 		}
     }
 
+    public String genMsg()
+    {
+        if (algo.equals("peleg"))
+            return peleg.genMsg();
+        else if (algo.equals("bfs"))
+            return bfs.getMsg();
+    }
+
+    public void handleMsg(String m)
+    {
+        if (algo.equals("peleg"))
+            peleg.handleMsg(m);
+        else if (algo.equals("bfs"))
+            bfs.handleMsg(m);
+
+    }
+    
     public void receive(){
         // TO-DO
         
