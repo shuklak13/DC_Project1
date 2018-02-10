@@ -20,4 +20,10 @@ class Message{
         sb.append(text);
         return sb.toString();
     }
+
+    public static String fromString(String rcvd_msg){
+        String[] parsed_msg = rcvd_msg.split("\\s+");
+        
+        return new Message(Integer.parseInt(parsed_msg[0]), Integer.parseInt(parsed_msg[1]), parsed_msg[2], Integer.parseInt(parsed_msg[3]));
+    }
 }

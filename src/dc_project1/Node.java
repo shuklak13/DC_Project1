@@ -65,18 +65,15 @@ class Node{
             @Override
             public void run() {
                 try {
-                    Socket s = new Socket("localhost", port);
+                    Socket s = new Socket(hostname, port);
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
-
                     while (true) {
-                        out.write("");
+                        out.write(new Message(uid, neighbor, "", 0).toString());
                         out.newLine();
                         out.flush();
-
                         Thread.sleep(200);
                     }
-
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
