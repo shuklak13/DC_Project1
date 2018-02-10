@@ -35,17 +35,15 @@ class Node{
         startServer();
     }
 
-    public boolean connectToNeighbors(HashMap<Integer, Integer> uids2ports){
-        // TO-DO
+    public boolean connectToNeighbors(HashMap<Integer, Integer> uids2ports, HashMap<Integer, String> uids2hosts){
         for(int neigbhor: neighbors)
-            startSender(uids2ports.get(neigbhor));
+            startSender(uids2ports.get(neigbhor), uids2hosts.get(neigbhor));
             p1 = new Peleg(neighbors, uid);
 //            b1 = new Bfs(neighbors);
-
         return true;
     }
 
-    public void startSender(int port) {
+    public void startSender(int port, String hostname) {
         (new Thread() {
             @Override
             public void run() {
@@ -54,7 +52,6 @@ class Node{
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
                     while (true) {
-                        //out.write(new Message(uid, neighbor, "", 0).toString());
                         out.write(genMsg().toString());
                         out.newLine();
                         out.flush();
@@ -82,6 +79,8 @@ class Node{
                     BufferedReader in = new BufferedReader(
                             new InputStreamReader(s.getInputStream()));
                     String line = null;
+                    if(uid==123)
+                      System.out.println("Messages I received:");
                     while ((line = in.readLine()) != null) {
                         handleMsg(line);
                         System.out.println(line);

@@ -16,10 +16,15 @@ public class DC_Project1 {
         try(Scanner sc=new Scanner(new File(args[0]))){
             nodes = parseLines(sc);
             HashMap<Integer, Integer> uids2ports = new HashMap<Integer, Integer>();
-            for(Node node: nodes)
+            HashMap<Integer, String> uids2hosts = new HashMap<Integer, String>();
+            for(Node node: nodes){
               uids2ports.put(node.uid, node.port);
+              uids2hosts.put(node.uid, node.hostname);
+            }
+            System.out.println("Uids2Ports");
+            uids2ports.keySet().forEach(key -> System.out.println(key + " " + uids2ports.get(key)));
             for(Node node: nodes)
-                node.connectToNeighbors(uids2ports);
+                node.connectToNeighbors(uids2ports, uids2hosts);
             //Node leader = peleg(nodes);
             //BFSTree tree = bfsTree(leader);
         }
