@@ -10,6 +10,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 class Node{
     int uid;
@@ -34,17 +35,17 @@ class Node{
         startServer();
     }
 
-    public boolean connectToNeighbors(){
+    public boolean connectToNeighbors(HashMap<Integer, Integer> uids2ports){
         // TO-DO
         for(int neigbhor: neighbors)
-            startSender(neigbhor);
+            startSender(uids2ports.get(neigbhor));
             p1 = new Peleg(neighbors, uid);
 //            b1 = new Bfs(neighbors);
 
         return true;
     }
 
-    public void startSender(int neighbor) {
+    public void startSender(int port) {
         (new Thread() {
             @Override
             public void run() {

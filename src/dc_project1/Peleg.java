@@ -33,13 +33,17 @@ public class Peleg {
     public void handleMsg(String m)
     {
         PelegMessage pmsg = PelegMessage.toPelegMsg(m);
-        
+        if(myUid==123){
+          System.out.println("\nNEW NODE: "+myUid);
+          System.out.println("Message Round: " + pmsg.round);
+          System.out.println("Neighbors: ");
+          rcvdFromNbr.keySet().forEach(node -> System.out.print(node + " "));
+          System.out.println("\nSender: " + pmsg.senderUID);
+        }
         if ((roundNo == pmsg.round) && (!rcvdFromNbr.get(pmsg.senderUID)))
         { 
             countRecMsgs+=1;
-            
             rcvdFromNbr.put(pmsg.senderUID,true);
-            
             if (pmsg.maxUID > maxUid)
             {
                 maxDist=pmsg.dist+1;

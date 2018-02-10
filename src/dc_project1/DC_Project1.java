@@ -3,6 +3,7 @@ package dc_project1;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.*;
+import java.util.HashMap;
 
 public class DC_Project1 {
     static boolean test = false;
@@ -14,8 +15,11 @@ public class DC_Project1 {
         }
         try(Scanner sc=new Scanner(new File(args[0]))){
             nodes = parseLines(sc);
+            HashMap<Integer, Integer> uids2ports = new HashMap<Integer, Integer>();
             for(Node node: nodes)
-                node.connectToNeighbors();
+              uids2ports.put(node.uid, node.port);
+            for(Node node: nodes)
+                node.connectToNeighbors(uids2ports);
             //Node leader = peleg(nodes);
             //BFSTree tree = bfsTree(leader);
         }
