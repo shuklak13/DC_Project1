@@ -11,6 +11,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.io.FileWriter;
 
 class Node{
     int uid;
@@ -23,8 +24,9 @@ class Node{
     String algo = "peleg";
     Peleg p1;
     Bfs b1;
+    BufferedWriter log;
 
-    public Node(int u, String hn, int p, int[] nghbrs, boolean test){
+    public Node(int u, String hn, int p, int[] nghbrs, boolean test) {
         uid = u;
         if(test)
           hostname = "localhost";
@@ -32,7 +34,20 @@ class Node{
           hostname = hn;
         port = p;
         neighbors = nghbrs;
+        try{
+          log = new BufferedWriter(new FileWriter(Integer.toString(u)+".txt"));
+          log.write("Timestamp\tMessage");
+        }
+        catch(IOException e){
+          System.out.println("FAIL: Attempted to write to " + Integer.toString(u)+".txt");
+          e.printStackTrace();
+        }
         startServer();
+    }
+    
+    public void writeToLog(String s) throws IOException{
+      log.append(Long.toString(System.currentTimeMillis()) + "\t" + s);
+      log.newLine();
     }
 
     public boolean connectToNeighbors(HashMap<Integer, Integer> uids2ports, HashMap<Integer, String> uids2hosts){
@@ -79,11 +94,9 @@ class Node{
                     BufferedReader in = new BufferedReader(
                             new InputStreamReader(s.getInputStream()));
                     String line = null;
-                    if(uid==123)
-                      System.out.println("Messages I received:");
+                    writeToLog("Messages I received:");
                     while ((line = in.readLine()) != null) {
-                        handleMsg(line);
-                        System.out.println(line);
+                        writeToLog(handleMsg(line));
                     }
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -92,14 +105,14 @@ class Node{
         }).start();
     }
 
-    public void print(){
+    public String toString(){
         StringBuilder sb = new StringBuilder();
         sb.append(uid+" ");
         sb.append(hostname+" ");
         sb.append(port+" ");
         for(int neighbor: neighbors)
             sb.append(neighbor+"    ");
-        System.out.println(sb.toString());
+        return sb.toString();
     }
 
     public String genMsg()
@@ -111,13 +124,14 @@ class Node{
         return null;
     }
 
-    public void handleMsg(String m)
+    public String handleMsg(String m)
     {
         if (algo.equals("peleg"))
-            p1.handleMsg(m);
+            return p1.handleMsg(m);
         //else if (algo.equals("bfs"))
-            //b1.handleMsg(m);
-
+            //return b1.handleMsg(m);
+        else
+          return "";
     }
    
 }

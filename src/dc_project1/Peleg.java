@@ -3,9 +3,9 @@ package dc_project1;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.StringJoiner;
 
 public class Peleg {
-        
     int maxUid = 0;
     int maxDist=0;
     int d1=0;
@@ -30,18 +30,18 @@ public class Peleg {
         }
     }
     
-    public void handleMsg(String m)
+    public String handleMsg(String m)
     {
         PelegMessage pmsg = PelegMessage.toPelegMsg(m);
-        if(myUid==5){
-          System.out.println("\nNEW NODE: "+myUid);
-          System.out.println("Message Round: " + pmsg.round);
-          System.out.println("Neighbors: ");
-          rcvdFromNbr.keySet().forEach(node -> System.out.print(node + " "));
-          System.out.println("\nSender: " + pmsg.senderUID);
-          System.out.println("Received from nodes: " + rcvdFromNbr.toString());
-          System.out.println("Size, Ctr: " + rcvdFromNbr.size() + " " + countRecMsgs);
-        }
+        StringJoiner sj = new StringJoiner("\t");
+        sj.add("\nNEW NODE: "+myUid);
+        sj.add("Message Round: " + pmsg.round);
+        sj.add("Neighbors: ");
+        for(int id: rcvdFromNbr.keySet())
+          sj.add(Integer.toString(id)+" ");
+        sj.add("\nSender: " + pmsg.senderUID);
+        sj.add("Received from nodes: " + rcvdFromNbr.toString());
+        sj.add("Size, Ctr: " + rcvdFromNbr.size() + " " + countRecMsgs);
         if ((roundNo <= pmsg.round) && (!rcvdFromNbr.get(pmsg.senderUID)))
         { 
             countRecMsgs+=1;
@@ -52,9 +52,7 @@ public class Peleg {
                 maxUid =pmsg.maxUID;
             }
             else if (pmsg.maxUID == maxUid)
-            {
                 maxDist=Math.max(maxDist,pmsg.dist);
-            }
             
             if (countRecMsgs == rcvdFromNbr.size())
             {
@@ -65,7 +63,7 @@ public class Peleg {
                 }
                 roundNo++;
                 if(myUid==maxUid && maxDist==d2 && maxDist==d3){
-                    terminate();
+                    sj.add(terminate());
                 }
                 d3=d2;
                 d2=maxDist;
@@ -81,6 +79,7 @@ public class Peleg {
         {
             buffer.add(m);
         }
+      return sj.toString();
     }
     
     public String genMsg()
@@ -89,8 +88,8 @@ public class Peleg {
         return pmsg.toString();
     }    
     
-    public void terminate()
+    public String terminate()
     {
-        System.out.println("Terminate");
+        return "Terminate";
     }
 }

@@ -13,7 +13,8 @@ public class DC_Project1 {
           test = true;
           System.out.println("Running in test (host will be localhost)");
         }
-        try(Scanner sc=new Scanner(new File(args[0]))){
+        try{
+            Scanner sc=new Scanner(new File(args[0]));
             nodes = parseLines(sc);
             HashMap<Integer, Integer> uids2ports = new HashMap<Integer, Integer>();
             HashMap<Integer, String> uids2hosts = new HashMap<Integer, String>();
@@ -45,7 +46,7 @@ public class DC_Project1 {
                     nodes.add(parseLine(params));
             }
         }
-        nodes.forEach(node -> node.print());
+        nodes.forEach(node -> System.out.println(node.toString()));
         return nodes;
     }
     public static Node parseLine(String[] nodeParams){
