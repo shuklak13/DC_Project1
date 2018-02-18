@@ -5,7 +5,6 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
@@ -84,6 +83,7 @@ class Node{
     }
 
     public void startServer() {
+      
         (new Thread() {
             @Override
             public void run() {
@@ -94,7 +94,6 @@ class Node{
                     BufferedReader in = new BufferedReader(
                             new InputStreamReader(s.getInputStream()));
                     String line = null;
-                    writeToLog("Messages I received:");
                     while ((line = in.readLine()) != null) {
                         writeToLog(handleMsg(line));
                     }
@@ -103,6 +102,35 @@ class Node{
                 }
             }
         }).start();
+        
+      
+		/*try	{
+			ServerSocket ss = new ServerSocket(port);
+			while(true)
+			{
+				ClientManager w;
+				try {
+                    Socket s = ss.accept();
+                    BufferedReader in = new BufferedReader(
+                            new InputStreamReader(s.getInputStream()));
+                    ClientManager w = new ClientManager(in);
+                    String line = null;
+                    while ((line = in.readLine()) != null) {
+                        writeToLog(handleMsg(line));
+                    }
+					Thread t = new Thread(w);
+					t.start();
+				} catch(IOException e) {
+					System.out.println("accept failed");
+					System.exit(100);
+				}				
+			}
+
+		} catch(IOException ex) {
+			ex.printStackTrace();
+		}
+        */
+        
     }
 
     public String toString(){
