@@ -1,0 +1,2764 @@
+Timestamp	Message
+I send: MaxUID: 23 Dist: 0 Text: NA Round: 0 Sender: 23  to localhost:3332
+
+My Round: 0	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: NA Round: 1 Sender: 23  to localhost:3332
+
+My Round: 1	Sender's Round: 0	
+Sender: 123	Received from nodes: {123=false}	Ctr: 0
+
+I send: MaxUID: 123 Dist: 1 Text: N

@@ -45,7 +45,8 @@ class Node{
     }
     
     public void writeToLog(String s) throws IOException{
-      log.append(Long.toString(System.currentTimeMillis()) + "\t" + s);
+      //log.append(Long.toString(System.currentTimeMillis()) + "\t" + s);
+      log.append(s);
       log.newLine();
     }
 
@@ -66,7 +67,9 @@ class Node{
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
                     while (true) {
-                        out.write(genMsg().toString());
+                        String msg = genMsg();
+                        writeToLog("\nI send: " + readablePelegMsg(msg) + " to " + hostname+":"+port+"\n");
+                        out.write(msg);
                         out.newLine();
                         out.flush();
                         Thread.sleep(200);
@@ -81,55 +84,41 @@ class Node{
             }
         }).start();
     }
+    
+    public String readablePelegMsg(String s){
+      String[] s2 = s.split(" ");
+        StringBuilder sb = new StringBuilder();
+        sb.append("MaxUID: " + s2[0]).append(" ");
+        sb.append("Dist: " + s2[1]).append(" ");
+        sb.append("Text: " + s2[2]).append(" ");
+        sb.append("Round: " + s2[3]).append(" ");
+        sb.append("Sender: " + s2[4]).append(" ");
+        return sb.toString();
+    }
 
     public void startServer() {
-      
+        System.out.println("Creating Server");
         (new Thread() {
             @Override
             public void run() {
-                ServerSocket ss;
-                try {
-                    ss = new ServerSocket(port);
-                    Socket s = ss.accept();
-                    BufferedReader in = new BufferedReader(
-                            new InputStreamReader(s.getInputStream()));
-                    String line = null;
-                    while ((line = in.readLine()) != null) {
-                        writeToLog(handleMsg(line));
-                    }
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+              try	{
+                  ServerSocket ss = new ServerSocket(port);
+                  try {
+                      Socket s = ss.accept();
+                      ClientManager w = new ClientManager(s, p1, log);
+                      Thread t = new Thread(w);
+                      t.start();
+                  } catch(IOException e) {
+                      System.out.println("accept failed");
+                      System.exit(100);
+                  }		
+              } catch(IOException ex) {
+                  ex.printStackTrace();
+              }
             }
         }).start();
-        
       
-		/*try	{
-			ServerSocket ss = new ServerSocket(port);
-			while(true)
-			{
-				ClientManager w;
-				try {
-                    Socket s = ss.accept();
-                    BufferedReader in = new BufferedReader(
-                            new InputStreamReader(s.getInputStream()));
-                    ClientManager w = new ClientManager(in);
-                    String line = null;
-                    while ((line = in.readLine()) != null) {
-                        writeToLog(handleMsg(line));
-                    }
-					Thread t = new Thread(w);
-					t.start();
-				} catch(IOException e) {
-					System.out.println("accept failed");
-					System.exit(100);
-				}				
-			}
-
-		} catch(IOException ex) {
-			ex.printStackTrace();
-		}
-        */
+        System.out.println("Created Server");
         
     }
 

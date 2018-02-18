@@ -1,3 +1,6 @@
+package dc_project1;
+
+import dc_project1.Peleg;
 import java.net.*;
 import java.io.*;
 import java.lang.*;
@@ -5,34 +8,46 @@ import java.lang.*;
 public class ClientManager implements Runnable {
 	
 	private Socket client;
+    Peleg p1;
+    BufferedWriter log;
+    String algo = "peleg";
+
+	public ClientManager(Socket client, Peleg p1, BufferedWriter log) {
+		this.client = client;
+        this.p1 = p1;
+        this.log = log;
+	}
 
 	public ClientManager(Socket client) {
 		this.client = client;
 	}
 
 	public void run() {
-		String line;
+		String line = null;
 		BufferedReader in = null;
-		PrintWriter out = null;
 
 		try {
-			in = new BufferedReader(new InputStreamReader(client.getInputStream()));
-			out = new PrintWriter(client.getOutputStream(), true);
-			line = in.readLine();
-
-			while(line != null) {
-			
-					System.out.println(line);
-					// send data back to the client
-					String line2 = "Hello From Server";
-					out.println(line2);
-					System.out.println("Message sent to client");
-					line = in.readLine();
-			}
-
-
+			in=new BufferedReader(new InputStreamReader(client.getInputStream()));
+            while ((line = in.readLine()) != null) {
+                writeToLog(handleMsg(line));
+            }
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
 	}
+
+    public String handleMsg(String m)
+    {
+        if (algo.equals("peleg"))
+            return p1.handleMsg(m);
+        //else if (algo.equals("bfs"))
+            //return b1.handleMsg(m);
+        else
+          return "";
+    }
+    public void writeToLog(String s) throws IOException{
+      //log.append(Long.toString(System.currentTimeMillis()) + "\t" + s);
+      log.append(s);
+      log.newLine();
+    }
 }

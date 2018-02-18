@@ -34,14 +34,15 @@ public class Peleg {
     {
         PelegMessage pmsg = PelegMessage.toPelegMsg(m);
         StringJoiner sj = new StringJoiner("\t");
-        sj.add("\nNEW NODE: "+myUid);
-        sj.add("Message Round: " + pmsg.round);
-        sj.add("Neighbors: ");
+        sj.add("My Round: " + roundNo);
+        sj.add("Sender's Round: " + pmsg.round);
+        /*sj.add("Neighbors: ");
         for(int id: rcvdFromNbr.keySet())
-          sj.add(Integer.toString(id)+" ");
+          sj.add(Integer.toString(id)+" ");*/
         sj.add("\nSender: " + pmsg.senderUID);
         sj.add("Received from nodes: " + rcvdFromNbr.toString());
-        sj.add("Size, Ctr: " + rcvdFromNbr.size() + " " + countRecMsgs);
+        sj.add("Ctr: " + countRecMsgs);
+        //sj.add("Size, Ctr: " + rcvdFromNbr.size() + " " + countRecMsgs);
         if ((roundNo <= pmsg.round) && (!rcvdFromNbr.get(pmsg.senderUID)))
         { 
             countRecMsgs+=1;
