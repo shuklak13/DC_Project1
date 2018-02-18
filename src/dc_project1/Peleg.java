@@ -9,13 +9,14 @@ public class Peleg {
     int maxUid = 0;
     int maxDist=0;
     int d1=0;
-    int d2=0; 
-    int d3=0;
+    int d2=-1; 
+    int d3=-1;
     int roundNo=0;
     int countRecMsgs = 0;
     int myUid = 0;
     ArrayList<String> buffer;
     HashMap<Integer, Boolean> rcvdFromNbr;
+    boolean terminated = false;
     
     public Peleg(int[] neighbors, int uid)
     {
@@ -33,6 +34,11 @@ public class Peleg {
     public String handleMsg(String m)
     {
         PelegMessage pmsg = PelegMessage.toPelegMsg(m);
+        if(Boolean.getBoolean(pmsg.terminated))
+          terminated = true;
+        if(terminated)
+          return terminate();
+        
         StringJoiner sj = new StringJoiner("\t");
         sj.add("My Round: " + roundNo);
         sj.add("Sender's Round: " + pmsg.round);
@@ -56,13 +62,15 @@ public class Peleg {
             if (countRecMsgs == rcvdFromNbr.size())
             {
                 countRecMsgs=0;
-                for(int neighbor: rcvdFromNbr.keySet())
+                for (int neighbor: rcvdFromNbr.keySet())
                 {
                     rcvdFromNbr.put(neighbor, false);
                 }
                 roundNo++;
                 if(myUid==maxUid && maxDist==d2 && maxDist==d3){
-                    sj.add(terminate());
+                  System.out.println("Leader is: " + String.valueOf(myUid));
+                  terminated = true;
+                  return(terminate());
                 }
                 d3=d2;
                 d2=maxDist;
@@ -79,12 +87,13 @@ public class Peleg {
             buffer.add(m);
         }
       }
+
       return sj.toString();
     }
     
     public String genMsg()
     {
-        PelegMessage pmsg = new PelegMessage(maxUid, maxDist, "NA", roundNo, myUid);
+        PelegMessage pmsg = new PelegMessage(maxUid, maxDist, String.valueOf(terminated), roundNo, myUid);
         return pmsg.toString();
     }    
     

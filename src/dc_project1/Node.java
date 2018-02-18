@@ -98,6 +98,7 @@ class Node{
 
     public void startServer() {
         System.out.println("Creating Server");
+        Node t = this;
         (new Thread() {
             @Override
             public void run() {
@@ -106,7 +107,7 @@ class Node{
                   while(true)
                     try {
                         Socket s = ss.accept();
-                        ClientManager w = new ClientManager(s, p1, log);
+                        ClientManager w = new ClientManager(s, t, log);
                         Thread t = new Thread(w);
                         t.start();
                     } catch(IOException e) {
@@ -135,17 +136,24 @@ class Node{
     {
         if (algo.equals("peleg"))
             return p1.genMsg();
-        //else if (algo.equals("bfs"))
-            //return b1.getMsg();
+        else if (algo.equals("bfs"))
+            return b1.genMsg();
         return null;
     }
-
+    
+    
     public String handleMsg(String m)
     {
         if (algo.equals("peleg"))
+          if(!m.equals("terminate"))
             return p1.handleMsg(m);
-        //else if (algo.equals("bfs"))
-            //return b1.handleMsg(m);
+          else{
+            algo = "bfs";
+            b1 = new Bfs();
+            return "";
+          }
+        else if (algo.equals("bfs"))
+            return b1.handleMsg(m);
         else
           return "";
     }

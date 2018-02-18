@@ -1,7 +1,7 @@
 package dc_project1;
 
 class PelegMessage{
-    String text;
+    String terminated;
     int round;
     int maxUID;
     int dist;
@@ -11,7 +11,7 @@ class PelegMessage{
         maxUID = maxUid;
         dist = d;
         round = rnd;
-        text = t;  
+        terminated = t;  
         senderUID = uid;
     }
 
@@ -20,7 +20,7 @@ class PelegMessage{
         StringBuilder sb = new StringBuilder();
         sb.append(maxUID).append(" ");
         sb.append(dist).append(" ");
-        sb.append(text).append(" ");
+        sb.append(terminated).append(" ");
         sb.append(round).append(" ");
         sb.append(senderUID).append(" ");
         return sb.toString();
