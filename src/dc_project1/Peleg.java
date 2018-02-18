@@ -36,16 +36,14 @@ public class Peleg {
         StringJoiner sj = new StringJoiner("\t");
         sj.add("My Round: " + roundNo);
         sj.add("Sender's Round: " + pmsg.round);
-        /*sj.add("Neighbors: ");
-        for(int id: rcvdFromNbr.keySet())
-          sj.add(Integer.toString(id)+" ");*/
         sj.add("\nSender: " + pmsg.senderUID);
         sj.add("Received from nodes: " + rcvdFromNbr.toString());
         sj.add("Ctr: " + countRecMsgs);
         //sj.add("Size, Ctr: " + rcvdFromNbr.size() + " " + countRecMsgs);
+      synchronized(this){
         if ((roundNo <= pmsg.round) && (!rcvdFromNbr.get(pmsg.senderUID)))
         { 
-            countRecMsgs+=1;
+            countRecMsgs+=1; // countRecMsgs = countRecMsgs+1
             rcvdFromNbr.put(pmsg.senderUID,true);
             if (pmsg.maxUID > maxUid)
             {
@@ -80,6 +78,7 @@ public class Peleg {
         {
             buffer.add(m);
         }
+      }
       return sj.toString();
     }
     

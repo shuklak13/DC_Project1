@@ -103,23 +103,22 @@ class Node{
             public void run() {
               try	{
                   ServerSocket ss = new ServerSocket(port);
-                  try {
-                      Socket s = ss.accept();
-                      ClientManager w = new ClientManager(s, p1, log);
-                      Thread t = new Thread(w);
-                      t.start();
-                  } catch(IOException e) {
-                      System.out.println("accept failed");
-                      System.exit(100);
-                  }		
+                  while(true)
+                    try {
+                        Socket s = ss.accept();
+                        ClientManager w = new ClientManager(s, p1, log);
+                        Thread t = new Thread(w);
+                        t.start();
+                    } catch(IOException e) {
+                        System.out.println("accept failed");
+                        System.exit(100);
+                    }		
               } catch(IOException ex) {
                   ex.printStackTrace();
               }
             }
         }).start();
-      
         System.out.println("Created Server");
-        
     }
 
     public String toString(){
