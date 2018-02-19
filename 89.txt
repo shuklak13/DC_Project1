@@ -7863,4 +7863,469 @@ Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
 My Round: 6	Sender's Round: 6	
 Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
 
-I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhos
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round: 6	Sender's Round: 5	
+Sender: 1043	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:5231
+
+My Round: 6	Sender's Round: 6	
+Sender: 23	Received from nodes: {1043=false, 23=true}	Ctr: 1
+
+I send: MaxUID: 1043 Dist: 2 Text: false Round: 6 Sender: 89  to localhost:2311
+
+My Round

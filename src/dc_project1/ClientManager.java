@@ -27,7 +27,16 @@ public class ClientManager implements Runnable {
 		try {
 			in=new BufferedReader(new InputStreamReader(client.getInputStream()));
             while ((line = in.readLine()) != null) {
-                owner.writeToLog(owner.handleMsg(line));
+              String handleMsgTxt = owner.handleMsg(line);
+              owner.writeToLog(handleMsgTxt);
+              if(owner.algo == "bfs" && handleMsgTxt.endsWith("ack")){
+                
+              }
+                BufferedWriter out = new BufferedWriter(
+                            new OutputStreamWriter(client.getOutputStream()));
+                    while (true) {
+                client.
+              }
             }
 		} catch(IOException e) {
 			e.printStackTrace();
