@@ -13,52 +13,54 @@ public class Bfs {
   HashMap<Integer, Boolean> nbrIsChild;
   HashMap<Integer, Boolean> haveAcked;
   HashMap<Integer, Boolean> haveSearchedUs;
+  int myUid;
   
-  public Bfs(boolean isLeader, int[] neighbors, int self)
+  public Bfs(boolean isLeader, int[] neighbors, int myUid)
   {
+    this.myUid = myUid;
     this.isLeader = isLeader;
     if(isLeader)
       marked = true;
-    for (int i=0; i<neighbors.length; i++)
+    for (int i=0; i<neighbors.length; i++){
         this.nbrIsChild.put(neighbors[i], false);
-    for (int i=0; i<neighbors.length; i++)
         this.haveAcked.put(neighbors[i], false);
-    for (int i=0; i<neighbors.length; i++)
         this.haveSearchedUs.put(neighbors[i], false);
+    }
   }
   
-  public String handleMsg(String s){
-    String[] m = s.split(" ");
-    int sender = Integer.parseInt(m[1]);
-    if(m[0].equals(""))  
+  public String handleMsg(String msg){
+    BfsMessage m = BfsMessage.toBfsMsg(msg);
+    if(m.type.equals(""))  
       return "";
-    else if(m[0].equals("search")){
+    else if(m.type.equals("search")){
       if(!marked){
         marked = true;
-        parent = sender;
-        haveAcked.put(sender, true);
+        parent = m.senderUID;
+        haveAcked.put(m.senderUID, true);
         return "pos-ack";
       }
       else
         return "neg-ack";
     }
-    else if(m[0].endsWith("ack")){
-      if(m[0].startsWith("pos"))
-        nbrIsChild.put(sender, true);
-      haveAcked.put(sender, true);
+    else if(m.type.endsWith("ack")){
+      if(m.type.startsWith("pos"))
+        nbrIsChild.put(m.senderUID, true);
+      haveAcked.put(m.senderUID, true);
     }
     return "";
   }
   
   public String genMsg(int nbr){
+    BfsMessage send;
     if(nbr==parent && allNbrsAcked())
-      return "pos-ack";
+      send = new BfsMessage("pos-ack", myUid);
     else if(haveSearchedUs.get(nbr) && nbr!=parent)
-      return "neg-ack";
+      send = new BfsMessage("neg-ack", myUid);
     else if(marked)
-      return "search";
+      send = new BfsMessage("search", myUid);
     else
-      return "";
+      send = new BfsMessage("", myUid);
+    return send.toString();
   }
   
   public boolean allNbrsAcked(){

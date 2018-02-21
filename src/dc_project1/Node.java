@@ -52,13 +52,12 @@ class Node{
 
     public boolean connectToNeighbors(HashMap<Integer, Integer> uids2ports, HashMap<Integer, String> uids2hosts){
         for(int neigbhor: neighbors)
-            startSender(uids2ports.get(neigbhor), uids2hosts.get(neigbhor));
+            startSender(uids2ports.get(neigbhor), uids2hosts.get(neigbhor), neighbor);
             p1 = new Peleg(neighbors, uid);
-//            b1 = new Bfs(neighbors);
         return true;
     }
 
-    public void startSender(int port, String hostname) {
+    public void startSender(int port, String hostname, int neighborUID) {
         (new Thread() {
             @Override
             public void run() {
@@ -67,7 +66,7 @@ class Node{
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
                     while (true) {
-                        String msg = genMsg();
+                        String msg = genMsg(neighborUID);
                         writeToLog("\nI send: " + readablePelegMsg(msg) + " to " + hostname+":"+port+"\n");
                         out.write(msg);
                         out.newLine();
@@ -132,12 +131,12 @@ class Node{
         return sb.toString();
     }
 
-    public String genMsg()
+    public String genMsg(int neighborUID)
     {
         if (algo.equals("peleg"))
             return p1.genMsg();
         else if (algo.equals("bfs"))
-            return b1.genMsg();
+            return b1.genMsg(neighborUID);
         return null;
     }
     
@@ -149,7 +148,7 @@ class Node{
             return p1.handleMsg(m);
           else{
             algo = "bfs";
-            b1 = new Bfs();
+            b1 = new Bfs(neighbors, uid);
             return "";
           }
         else if (algo.equals("bfs"))
