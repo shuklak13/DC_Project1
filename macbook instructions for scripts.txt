@@ -1,0 +1,6 @@
+replace the line: gnome-terminal -e ".." with the following 3 lines:
+
+ 
+osascript -e 'tell app "Terminal"
+do script "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no '$netid@$host' java -cp '$BINDIR' '$PROG' '$p'; '$SHELL'"
+end tell'
