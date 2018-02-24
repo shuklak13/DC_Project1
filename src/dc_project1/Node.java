@@ -143,7 +143,7 @@ class Node{
     }
     
     public void initiateBfs(){
-      b1 = new Bfs(leader==uid, neighbors, uid);
+      b1 = new Bfs(leader==uid, neighbors, this);
     }
    
 }

@@ -13,10 +13,8 @@ public class Peleg {
     int d3=-1;
     int roundNo=0;
     int countRecMsgs = 0;
-    int myUid = 0;
     ArrayList<String> buffer;
     HashMap<Integer, Boolean> rcvdFromNbr;
-    int leader = -1;  // -1 indicates ongoing; else, Peleg has terminated
     Node owner;
     
     public Peleg(int[] neighbors, Node owner)
@@ -25,33 +23,37 @@ public class Peleg {
         buffer  = new ArrayList<String>();
         this.owner = owner;
         this.maxUid = owner.uid;
-        this.myUid = owner.uid;
         this.countRecMsgs =0;
         for (int i=0; i<neighbors.length; i++)
             this.rcvdFromNbr.put(neighbors[i], false);
     }
     
     private void handleLeaderElection(int newLeader, int sender){
-      if(leader!=-1 && leader!=newLeader)
-        System.out.println("ERROR: node " + myUid + " thinks that leader is " + leader
+      if(owner.leader!=-1 && owner.leader!=newLeader)
+        System.out.println("ERROR: node " + owner.uid + " thinks that leader is " + owner.leader
         + ", but it received a message from node " + sender + " that node " + newLeader + " is leader");
-      if(leader==-1)
+      if(owner.leader==-1)
         owner.writeToLog("I HAVE SELECTED " + newLeader + " TO BE THE NEW LEADER");
-      leader = newLeader;
+      owner.leader = newLeader;
     }
     
     /**
      * @return if algo ongoing, -1; if algo terminated, leader's uid
      */
     public int handleMsg(String m){
-        PelegMessage pmsg = PelegMessage.toPelegMsg(m);
-        
-        if(pmsg.leader!=-1)
-          handleLeaderElection(pmsg.leader, pmsg.senderUID);
-        if(leader!=-1)
-          return leader;
-        
-        owner.writeToLog(constructLogMsg_Receive(pmsg));
+      if(m.startsWith("BFS")){
+        owner.leader = BfsMessage.toBfsMsg(m).leader;
+        return owner.leader;
+      }
+      
+      PelegMessage pmsg = PelegMessage.toPelegMsg(m);
+
+      if(pmsg.leader!=-1)
+        handleLeaderElection(pmsg.leader, pmsg.senderUID);
+      if(owner.leader!=-1)
+        return owner.leader;
+
+      owner.writeToLog(constructLogMsg_Receive(pmsg));
         
       synchronized(this){
         if ((roundNo <= pmsg.round) && (!rcvdFromNbr.get(pmsg.senderUID))){ 
@@ -69,10 +71,10 @@ public class Peleg {
                 for (int neighbor: rcvdFromNbr.keySet())
                     rcvdFromNbr.put(neighbor, false);
                 roundNo++;
-                if(myUid==maxUid && maxDist==d2 && maxDist==d3){
-                  System.out.println("Leader is: " + String.valueOf(myUid));
-                  leader = maxUid;
-                  return leader;
+                if(owner.uid==maxUid && maxDist==d2 && maxDist==d3){
+                  System.out.println("Leader is: " + String.valueOf(owner.uid));
+                  owner.leader = maxUid;
+                  return owner.leader;
                 }
                 d3=d2;
                 d2=maxDist;
@@ -94,7 +96,6 @@ public class Peleg {
         sj.add("\nSender: " + pmsg.senderUID);
         sj.add("Received from nodes: " + rcvdFromNbr.toString());
         sj.add("Ctr: " + countRecMsgs);
-        //sj.add("Size, Ctr: " + rcvdFromNbr.size() + " " + countRecMsgs);
       return sj.toString();
     }
     
@@ -110,6 +111,6 @@ public class Peleg {
     }
     
     public PelegMessage genMsg(){
-        return new PelegMessage(maxUid, maxDist, leader, roundNo, myUid);
+        return new PelegMessage(maxUid, maxDist, owner.leader, roundNo, owner.uid);
     }    
 }

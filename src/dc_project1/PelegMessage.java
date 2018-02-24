@@ -18,6 +18,7 @@ class PelegMessage{
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
+        sb.append("Peleg ");
         sb.append(maxUID).append(" ");
         sb.append(dist).append(" ");
         sb.append(leader).append(" ");
@@ -28,11 +29,14 @@ class PelegMessage{
 
     public static PelegMessage toPelegMsg(String rcvd_msg){
         String[] parsed_msg = rcvd_msg.split("\\s+");
-        
-        return new PelegMessage(Integer.parseInt(parsed_msg[0]),
-                                Integer.parseInt(parsed_msg[1]),
+//        System.out.println();
+//        for(String m: parsed_msg)
+//          System.out.print(m);
+//        System.out.println();
+        return new PelegMessage(Integer.parseInt(parsed_msg[1]),
                                 Integer.parseInt(parsed_msg[2]),
                                 Integer.parseInt(parsed_msg[3]),
-                                Integer.parseInt(parsed_msg[4]));
+                                Integer.parseInt(parsed_msg[4]),
+                                Integer.parseInt(parsed_msg[5]));
     }
 }

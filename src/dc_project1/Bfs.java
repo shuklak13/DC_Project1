@@ -10,17 +10,15 @@ import java.util.StringJoiner;
 public class Bfs {
   int parent;
   boolean marked = false;
-  boolean isLeader = false;
   HashMap<Integer, Boolean> nbrIsChild = new HashMap<Integer, Boolean>();
   HashMap<Integer, Boolean> haveAcked = new HashMap<Integer, Boolean>();
   HashMap<Integer, Boolean> haveSearchedUs = new HashMap<Integer, Boolean>();
-  int myUid;
+  Node owner;
   
-  public Bfs(boolean isLeader, int[] neighbors, int myUid)
+  public Bfs(boolean isLeader, int[] neighbors, Node owner)
   {
-    this.myUid = myUid;
-    this.isLeader = isLeader;
-    System.out.println(myUid + " started; Leadership=" + isLeader);
+    this.owner = owner;
+    System.out.println(owner.uid + " started; Leadership=" + isLeader);
     if(isLeader)
       marked = true;
     for (int i=0; i<neighbors.length; i++){
@@ -54,13 +52,13 @@ public class Bfs {
   
   public BfsMessage genMsg(int nbr){
     if(nbr==parent && allNbrsAcked())
-      return new BfsMessage("pos-ack", myUid);
+      return new BfsMessage("pos-ack", owner.uid, owner.leader);
     else if(haveSearchedUs.get(nbr) && nbr!=parent)
-      return new BfsMessage("neg-ack", myUid);
+      return new BfsMessage("neg-ack", owner.uid, owner.leader);
     else if(marked)
-      return new BfsMessage("search", myUid);
+      return new BfsMessage("search", owner.uid, owner.leader);
     else
-      return new BfsMessage("", myUid);
+      return new BfsMessage("", owner.uid, owner.leader);
   }
   
   public boolean allNbrsAcked(){
