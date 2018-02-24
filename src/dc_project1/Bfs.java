@@ -11,9 +11,9 @@ public class Bfs {
   int parent;
   boolean marked = false;
   boolean isLeader = false;
-  HashMap<Integer, Boolean> nbrIsChild;
-  HashMap<Integer, Boolean> haveAcked;
-  HashMap<Integer, Boolean> haveSearchedUs;
+  HashMap<Integer, Boolean> nbrIsChild = new HashMap<Integer, Boolean>();
+  HashMap<Integer, Boolean> haveAcked = new HashMap<Integer, Boolean>();
+  HashMap<Integer, Boolean> haveSearchedUs = new HashMap<Integer, Boolean>();
   int myUid;
   
   public Bfs(boolean isLeader, int[] neighbors, int myUid)

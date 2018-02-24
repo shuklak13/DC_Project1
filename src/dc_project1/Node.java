@@ -82,14 +82,16 @@ class Node{
                             new OutputStreamWriter(s.getOutputStream()));
                     while (true) {
                         if (leader==-1){
-                            PelegMessage msg = p1.genMsg();
-                            writeToLog(p1.constructLogMsg_Send(msg, hostname, port));
-                            out.write(msg.toString());
+                          PelegMessage msg = p1.genMsg();
+                          writeToLog(p1.constructLogMsg_Send(msg, hostname, port));
+                          out.write(msg.toString());
                         }
                         else{
-                            BfsMessage msg = b1.genMsg(neighborUID);
-                            writeToLog(b1.constructLogMsg_Send(msg, hostname, port));
-                            out.write(msg.toString());
+                          if(b1==null)
+                            initiateBfs();
+                          BfsMessage msg = b1.genMsg(neighborUID);
+                          writeToLog(b1.constructLogMsg_Send(msg, hostname, port));
+                          out.write(msg.toString());
                         }
                         out.newLine();
                         out.flush();
@@ -138,6 +140,10 @@ class Node{
         for(int neighbor: neighbors)
             sb.append(neighbor+"    ");
         return sb.toString();
+    }
+    
+    public void initiateBfs(){
+      b1 = new Bfs(leader==uid, neighbors, uid);
     }
    
 }

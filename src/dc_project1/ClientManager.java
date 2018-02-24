@@ -34,7 +34,10 @@ public class ClientManager implements Runnable {
     public void handleMsg(String m){
       if (owner.leader == -1)
           owner.leader = owner.p1.handleMsg(m);
-      else
+      else{
+          if(owner.b1==null)
+            owner.initiateBfs();
           owner.b1.handleMsg(m);
+      }
     }
 }
