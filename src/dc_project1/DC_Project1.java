@@ -4,6 +4,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.*;
 import java.util.HashMap;
+import java.util.HashSet;
 
 public class DC_Project1 {
     static boolean test = false;
@@ -22,8 +23,8 @@ public class DC_Project1 {
               uids2ports.put(node.uid, node.port);
               uids2hosts.put(node.uid, node.hostname);
             }
-            System.out.println("Uids2Ports");
-            uids2ports.keySet().forEach(key -> System.out.println(key + " " + uids2ports.get(key)));
+            System.out.println("\n Mapping from UIDs to Ports:");
+            nodes.forEach(node -> System.out.println(node.uid + " -> " + uids2hosts.get(node.uid) + ":" + uids2ports.get(node.uid)));
             System.out.println();
             for(Node node: nodes)
                 node.connectToNeighbors(uids2ports, uids2hosts);
@@ -34,28 +35,33 @@ public class DC_Project1 {
         }
     }
     public static ArrayList<Node> parseLines(Scanner sc){
-        int numNodes = 0;
-        ArrayList<Node> nodes = new ArrayList<>();
+        HashMap<Integer, Node> nodes = new HashMap<Integer, Node>();
         while(sc.hasNext()){
-            String[] params = sc.nextLine().trim().split("\\s+");
-            if(!(params[0].equals("#") || params.length<1)){
-                if(numNodes==0)
-                    numNodes = Integer.parseInt(params[0]);
-                else
-                    nodes.add(parseLine(params));
-            }
+          String line = sc.nextLine();
+          String[] params = line.trim().split("\\s+");
+          System.out.println("Line: " + line + "\tLength = " + params.length);
+          if(params.length>1 && !params[0].equals("#")){
+            int uid = Integer.valueOf(params[0]);
+            if (nodes.containsKey(uid))
+              nodes.get(uid).addNeighbors(parseLine_Neighbors(params));
+            else
+              nodes.put(uid, parseLine_Node(params));
+          }
         }
-        nodes.forEach(node -> System.out.println(node.toString()));
-        return nodes;
+        nodes.forEach((nodeID, node) -> System.out.println(node.toString()));
+        return new ArrayList<Node>(nodes.values());
     }
-    public static Node parseLine(String[] nodeParams){
+    public static Node parseLine_Node(String[] nodeParams){
         String uid = nodeParams[0];
         String hostname = nodeParams[1];
         String port = nodeParams[2];
-        int[] neighbors = new int[nodeParams.length-3];
-        for(int i=3; i<nodeParams.length; i++)
-            neighbors[i-3]=Integer.parseInt(nodeParams[i]);
-        return new Node(Integer.parseInt(uid), hostname, Integer.parseInt(port), neighbors, test);
+        return new Node(Integer.parseInt(uid), hostname, Integer.parseInt(port), test);
+    }
+    public static int[] parseLine_Neighbors(String[] params){
+        int[] neighbors = new int[params.length-1];
+        for(int i=1; i<params.length; i++)
+            neighbors[i-1]=Integer.parseInt(params[i]);
+        return neighbors;
     }
 
 }

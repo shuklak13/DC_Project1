@@ -11,6 +11,7 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.io.FileWriter;
+import java.io.File;
 
 class Node{
     int uid;
@@ -25,15 +26,19 @@ class Node{
     BufferedWriter log;
 
     public Node(int u, String hn, int p, int[] nghbrs, boolean test) {
+      this(u, hn, p, test);
+      neighbors = nghbrs;
+    }
+
+    public Node(int u, String hn, int p, boolean test) {
         uid = u;
         if(test)
           hostname = "localhost";
         else
           hostname = hn;
         port = p;
-        neighbors = nghbrs;
         try{
-          log = new BufferedWriter(new FileWriter(Integer.toString(u)+".txt"));
+          log = new BufferedWriter(new FileWriter(new File("logs", Integer.toString(u)+".txt")));
           log.write("Timestamp\tMessage");
         }
         catch(IOException e){
@@ -41,6 +46,10 @@ class Node{
           e.printStackTrace();
         }
         startServer();
+    }
+    
+    public void addNeighbors(int[] neighbors){
+      this.neighbors = neighbors;
     }
     
     public void writeToLog(String s){
@@ -53,11 +62,14 @@ class Node{
       }
     }
 
-    public boolean connectToNeighbors(HashMap<Integer, Integer> uids2ports, HashMap<Integer, String> uids2hosts){
+    public void connectToNeighbors(HashMap<Integer, Integer> uids2ports, HashMap<Integer, String> uids2hosts){
+      if(neighbors!=null){
         for(int neigbhor: neighbors)
             startSender(uids2ports.get(neigbhor), uids2hosts.get(neigbhor), neigbhor);
-            p1 = new Peleg(neighbors, this);
-        return true;
+        p1 = new Peleg(neighbors, this);
+      }
+      else
+        System.out.println("ERROR: Node " + uid + " attempted to connect to neighbors, but has none");
     }
 
     public void startSender(int port, String hostname, int neighborUID) {
@@ -95,7 +107,6 @@ class Node{
     }
 
     public void startServer() {
-        System.out.println("Creating Server");
         Node t = this;
         (new Thread() {
             @Override
@@ -117,7 +128,6 @@ class Node{
               }
             }
         }).start();
-        System.out.println("Created Server");
     }
 
     public String toString(){
