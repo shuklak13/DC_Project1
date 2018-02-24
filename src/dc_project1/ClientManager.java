@@ -21,19 +21,20 @@ public class ClientManager implements Runnable {
 	}
 
 	public void run() {
-		String line = null;
-		BufferedReader in = null;
-
 		try {
-			in=new BufferedReader(new InputStreamReader(client.getInputStream()));
-            while ((line = in.readLine()) != null) {
-              owner.handleMsg(line);
-//              if(owner.algo == "bfs" && handleMsgTxt.endsWith("ack")){
-//                
-//              }
-            }
+          String line;
+          BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
+          while ((line = in.readLine()) != null)
+            handleMsg(line);
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
 	}
+    
+    public void handleMsg(String m){
+      if (owner.leader == -1)
+          owner.leader = owner.p1.handleMsg(m);
+      else
+          owner.b1.handleMsg(m);
+    }
 }

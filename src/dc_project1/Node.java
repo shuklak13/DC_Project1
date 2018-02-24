@@ -139,12 +139,5 @@ class Node{
             sb.append(neighbor+"    ");
         return sb.toString();
     }
-    
-    public void handleMsg(String m){
-      if (leader==-1)
-          leader = p1.handleMsg(m);
-      else
-          b1.handleMsg(m);
-    }
    
 }
