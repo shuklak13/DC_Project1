@@ -1,5 +1,7 @@
 package dc_project1;
 
+import java.util.StringJoiner;
+
 class BfsMessage{
   
     String type;
@@ -25,6 +27,15 @@ class BfsMessage{
         sb.append(degree).append(" ");
         sb.append(maxDegree).append(" ");
         return sb.toString();
+    }
+    
+    public String toReadableString(){
+      StringJoiner sj = new StringJoiner("\t");
+        sj.add("\nSender: " + senderUID);
+        sj.add("Message Type: " + type);
+        sj.add("Degree: " + degree);
+        sj.add("Max Degree: " + maxDegree);
+      return sj.toString();
     }
 
     public static BfsMessage toBfsMsg(String rcvd_msg){

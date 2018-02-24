@@ -80,21 +80,12 @@ public class Bfs {
     return ackCtr == haveAcked.size();
   }
   
-    public String constructLogMsg_Receive(BfsMessage bmsg){
-      StringJoiner sj = new StringJoiner("\t");
-        sj.add("(BFS) I receive: ");
-        sj.add("\nSender: " + bmsg.senderUID);
-        sj.add("Message Type: " + bmsg.type);
-      return sj.toString();
-    }
-    
-    public String constructLogMsg_Send(BfsMessage bmsg, String hostname, int port){
-      StringJoiner sj = new StringJoiner("\t");
-        sj.add("(BFS) I send the following to " + hostname + ":"+port);
-        sj.add("\nSender: " + bmsg.senderUID);
-        sj.add("Message Type: " + bmsg.type);
-      return sj.toString();
-    }
+  public String constructLogMsg_Receive(BfsMessage bmsg){
+    return "(BFS) I receive: " + bmsg.toReadableString();
+  }
+  public String constructLogMsg_Send(BfsMessage bmsg, String hostname, int port){
+    return "(BFS) I send the following to " + hostname+":"+port + " " + bmsg.toReadableString();
+  }
 }
     
    
