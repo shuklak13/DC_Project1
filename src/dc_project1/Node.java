@@ -74,13 +74,14 @@ class Node{
 
     public void startSender(int port, String hostname, int neighborUID) {
         (new Thread() {
+            boolean terminated = false;
             @Override
             public void run() {
                 try {
                     Socket s = new Socket(hostname, port);
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
-                    while (true) {
+                    while (!terminated) {
                         if (leader==-1){
                           PelegMessage msg = p1.genMsg();
                           writeToLog(p1.constructLogMsg_Send(msg, hostname, port));
@@ -90,6 +91,8 @@ class Node{
                           if(b1==null)
                             initiateBfs();
                           BfsMessage msg = b1.genMsg(neighborUID);
+                          if(msg.type.equalsIgnoreCase("terminate"))
+                            terminated = true; 
                           writeToLog(b1.constructLogMsg_Send(msg, hostname, port));
                           out.write(msg.toString());
                         }
@@ -143,7 +146,14 @@ class Node{
     }
     
     public void initiateBfs(){
-      b1 = new Bfs(leader==uid, neighbors, this);
+      synchronized(this){
+        if(b1==null)
+          b1 = new Bfs(isLeader(), neighbors, this);
+      }
+    }
+    
+    public boolean isLeader(){
+      return uid==leader;
     }
    
 }

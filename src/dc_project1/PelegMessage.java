@@ -31,7 +31,7 @@ class PelegMessage{
         String[] parsed_msg = rcvd_msg.split("\\s+");
 //        System.out.println();
 //        for(String m: parsed_msg)
-//          System.out.print(m);
+//          System.out.print(m+" ");
 //        System.out.println();
         return new PelegMessage(Integer.parseInt(parsed_msg[1]),
                                 Integer.parseInt(parsed_msg[2]),
