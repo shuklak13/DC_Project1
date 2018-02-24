@@ -4,6 +4,7 @@ package dc_project1;
 import java.util.HashMap;
 import java.lang.*;
 import java.util.Iterator;
+import java.util.StringJoiner;
 
 
 public class Bfs {
@@ -19,6 +20,7 @@ public class Bfs {
   {
     this.myUid = myUid;
     this.isLeader = isLeader;
+    System.out.println(myUid + " started; Leadership=" + isLeader);
     if(isLeader)
       marked = true;
     for (int i=0; i<neighbors.length; i++){
@@ -50,17 +52,15 @@ public class Bfs {
     return "";
   }
   
-  public String genMsg(int nbr){
-    BfsMessage send;
+  public BfsMessage genMsg(int nbr){
     if(nbr==parent && allNbrsAcked())
-      send = new BfsMessage("pos-ack", myUid);
+      return new BfsMessage("pos-ack", myUid);
     else if(haveSearchedUs.get(nbr) && nbr!=parent)
-      send = new BfsMessage("neg-ack", myUid);
+      return new BfsMessage("neg-ack", myUid);
     else if(marked)
-      send = new BfsMessage("search", myUid);
+      return new BfsMessage("search", myUid);
     else
-      send = new BfsMessage("", myUid);
-    return send.toString();
+      return new BfsMessage("", myUid);
   }
   
   public boolean allNbrsAcked(){
@@ -72,6 +72,21 @@ public class Bfs {
     return ctr == haveAcked.size();
   }
   
+    public String constructLogMsg_Receive(BfsMessage bmsg){
+      StringJoiner sj = new StringJoiner("\t");
+        sj.add("(BFS) I receive: ");
+        sj.add("\nSender: " + bmsg.senderUID);
+        sj.add("Message Type: " + bmsg.type);
+      return sj.toString();
+    }
+    
+    public String constructLogMsg_Send(BfsMessage bmsg, String hostname, int port){
+      StringJoiner sj = new StringJoiner("\t");
+        sj.add("(BFS) I send the following to " + hostname + ":"+port);
+        sj.add("\nSender: " + bmsg.senderUID);
+        sj.add("Message Type: " + bmsg.type);
+      return sj.toString();
+    }
 }
     
    

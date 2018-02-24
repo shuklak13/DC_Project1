@@ -24,10 +24,9 @@ public class DC_Project1 {
             }
             System.out.println("Uids2Ports");
             uids2ports.keySet().forEach(key -> System.out.println(key + " " + uids2ports.get(key)));
+            System.out.println();
             for(Node node: nodes)
                 node.connectToNeighbors(uids2ports, uids2hosts);
-            //Node leader = peleg(nodes);
-            //BFSTree tree = bfsTree(leader);
         }
         catch(IOException e){
             System.out.println("File " + args[1] + " not found");

@@ -19,8 +19,7 @@ class Node{
     int[] neighbors;
     int round;
     ArrayList<PelegMessage> buffer = new ArrayList<PelegMessage>();
-    Node leader;
-    String algo = "peleg";
+    int leader = -1;  // if -1, algo=peleg; else, algo=bfs
     Peleg p1;
     Bfs b1;
     BufferedWriter log;
@@ -44,16 +43,20 @@ class Node{
         startServer();
     }
     
-    public void writeToLog(String s) throws IOException{
-      //log.append(Long.toString(System.currentTimeMillis()) + "\t" + s);
-      log.append(s);
-      log.newLine();
+    public void writeToLog(String s){
+      try{
+        log.append(s);
+        log.newLine();
+      }
+      catch(IOException e){
+        System.out.println("IOException: " + e);
+      }
     }
 
     public boolean connectToNeighbors(HashMap<Integer, Integer> uids2ports, HashMap<Integer, String> uids2hosts){
         for(int neigbhor: neighbors)
-            startSender(uids2ports.get(neigbhor), uids2hosts.get(neigbhor), neighbor);
-            p1 = new Peleg(neighbors, uid);
+            startSender(uids2ports.get(neigbhor), uids2hosts.get(neigbhor), neigbhor);
+            p1 = new Peleg(neighbors, this);
         return true;
     }
 
@@ -66,9 +69,16 @@ class Node{
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
                     while (true) {
-                        String msg = genMsg(neighborUID);
-                        writeToLog("\nI send: " + readablePelegMsg(msg) + " to " + hostname+":"+port+"\n");
-                        out.write(msg);
+                        if (leader==-1){
+                            PelegMessage msg = p1.genMsg();
+                            writeToLog(p1.constructLogMsg_Send(msg, hostname, port));
+                            out.write(msg.toString());
+                        }
+                        else{
+                            BfsMessage msg = b1.genMsg(neighborUID);
+                            writeToLog(b1.constructLogMsg_Send(msg, hostname, port));
+                            out.write(msg.toString());
+                        }
                         out.newLine();
                         out.flush();
                         Thread.sleep(200);
@@ -82,17 +92,6 @@ class Node{
                 }
             }
         }).start();
-    }
-    
-    public String readablePelegMsg(String s){
-      String[] s2 = s.split(" ");
-        StringBuilder sb = new StringBuilder();
-        sb.append("MaxUID: " + s2[0]).append(" ");
-        sb.append("Dist: " + s2[1]).append(" ");
-        sb.append("Text: " + s2[2]).append(" ");
-        sb.append("Round: " + s2[3]).append(" ");
-        sb.append("Sender: " + s2[4]).append(" ");
-        return sb.toString();
     }
 
     public void startServer() {
@@ -130,31 +129,12 @@ class Node{
             sb.append(neighbor+"    ");
         return sb.toString();
     }
-
-    public String genMsg(int neighborUID)
-    {
-        if (algo.equals("peleg"))
-            return p1.genMsg();
-        else if (algo.equals("bfs"))
-            return b1.genMsg(neighborUID);
-        return null;
-    }
     
-    
-    public String handleMsg(String m)
-    {
-        if (algo.equals("peleg"))
-          if(!m.equals("terminate"))
-            return p1.handleMsg(m);
-          else{
-            algo = "bfs";
-            b1 = new Bfs(neighbors, uid);
-            return "";
-          }
-        else if (algo.equals("bfs"))
-            return b1.handleMsg(m);
-        else
-          return "";
+    public void handleMsg(String m){
+      if (leader==-1)
+          leader = p1.handleMsg(m);
+      else
+          b1.handleMsg(m);
     }
    
 }

@@ -1,2 +1,5 @@
 /build/
 /dist/
+*.txt
+*.txt
+nbproject/private/private.xml
