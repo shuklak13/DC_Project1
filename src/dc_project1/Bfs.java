@@ -16,6 +16,9 @@ public class Bfs {
   int degree = Integer.MAX_VALUE;
   int maxDegree = 0;
   int[] neighbors;
+  int round;
+  int countRecMsgs = 0;
+  HashMap<Integer, Boolean> rcvdFromNbr;
   
   public Bfs(boolean isLeader, int[] neighbors, Node owner)
   {
@@ -24,43 +27,54 @@ public class Bfs {
     System.out.println(owner.uid + " started; Leadership=" + isLeader);
     if(isLeader)
       degree = 0;
-    initializeState();
-  }
-  
-  public void initializeState(){
     haveAcked = new HashMap<Integer, Boolean>();
     haveSearchedUs = new HashMap<Integer, Boolean>();
+    rcvdFromNbr = new HashMap<Integer, Boolean>();
     ackCtr = 0;
     for (int i=0; i<neighbors.length; i++){
         haveAcked.put(neighbors[i], false);
         haveSearchedUs.put(neighbors[i], false);
+        rcvdFromNbr.put(neighbors[i], false);
     }
   }
   
   public void handleMsg(String msg){
-    BfsMessage m = BfsMessage.toBfsMsg(msg);
-    if(!m.type.equals("dummy"))  
+//    if(owner.isLeader())
+//      System.out.println("Leader's ack ctr: " + ackCtr);
+    if(msg.split("\\s")[0].equalsIgnoreCase("BFS")){
+      BfsMessage m = BfsMessage.toBfsMsg(msg);
       synchronized(this){
-        if(m.maxDegree > maxDegree)
-          maxDegree = m.maxDegree;
-        if(m.type.equals("search") && (m.degree < degree)){
-            parent = m.senderUID;
-            initializeState();
+        if(round <= m.round){
+          if(m.maxDegree > maxDegree)
+            maxDegree = m.maxDegree;
+          if(m.type.equals("search") && (m.degree+1 < degree)){
+              parent = m.senderUID;
+              haveAcked.put(m.senderUID, true);
+              haveSearchedUs.put(m.senderUID, true);
+              ackCtr++;
+              degree = m.degree+1;
+              if(degree>maxDegree)
+                maxDegree = degree;
+            }
+          else if(m.type.endsWith("ack")){
+//            if(owner.isLeader())
+//              System.out.println(m.senderUID + " has acked " + m.type);
+            if(m.type.startsWith("pos"))
+              children.add(String.valueOf(m.senderUID));
             haveAcked.put(m.senderUID, true);
-            haveSearchedUs.put(m.senderUID, true);
             ackCtr++;
-            degree = m.degree+1;
-            if(degree>maxDegree)
-              maxDegree = degree;
+          }
+          rcvdFromNbr.put(m.senderUID, Boolean.TRUE);
+          countRecMsgs++;
+          if(countRecMsgs==rcvdFromNbr.size()){
+            round++;
+            countRecMsgs=0;
+            for (int i=0; i<neighbors.length; i++)
+                this.rcvdFromNbr.put(neighbors[i], false);
           }
         }
-        else if(m.type.endsWith("ack")){
-          if(m.type.startsWith("pos"))
-            children.add(String.valueOf(m.senderUID));
-          haveAcked.put(m.senderUID, true);
-          ackCtr++;
-        }
       }
+    }
   }
   
   public BfsMessage genMsg(int nbr){
@@ -75,7 +89,7 @@ public class Bfs {
       type = "search";
     else
       type = "dummy";
-    return new BfsMessage(type, owner.uid, owner.leader, degree, maxDegree);
+    return new BfsMessage(type, owner.uid, owner.leader, degree, maxDegree, round);
   }
   
   public String terminateString(){
