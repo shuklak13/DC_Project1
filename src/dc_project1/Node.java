@@ -24,6 +24,7 @@ class Node{
     Peleg p1;
     Bfs b1;
     BufferedWriter log;
+    boolean terminated = false;
 
     public Node(int u, String hn, int p, int[] nghbrs, boolean test) {
       this(u, hn, p, test);
@@ -74,7 +75,6 @@ class Node{
 
     public void startSender(int port, String hostname, int neighborUID) {
         (new Thread() {
-            boolean terminated = false;
             @Override
             public void run() {
                 try {
@@ -91,8 +91,10 @@ class Node{
                           if(b1==null)
                             initiateBfs();
                           BfsMessage msg = b1.genMsg(neighborUID);
-                          if(msg.type.equalsIgnoreCase("terminate"))
+                          if(msg.type.equalsIgnoreCase("pos-ack")){
                             terminated = true; 
+                            System.out.println(b1.terminateString());
+                          }
                           writeToLog(b1.constructLogMsg_Send(msg, hostname, port));
                           out.write(msg.toString());
                         }
@@ -118,7 +120,7 @@ class Node{
             public void run() {
               try	{
                   ServerSocket ss = new ServerSocket(port);
-                  while(true)
+                  while(!terminated)
                     try {
                         Socket s = ss.accept();
                         ClientManager w = new ClientManager(s, t, log);

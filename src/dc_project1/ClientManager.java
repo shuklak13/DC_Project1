@@ -24,8 +24,13 @@ public class ClientManager implements Runnable {
 		try {
           String line;
           BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
-          while ((line = in.readLine()) != null)
+          while (!owner.terminated && (line = in.readLine()) != null){
+            if(owner.b1!=null && owner.isLeader() && owner.b1.allNbrsAcked()){
+              owner.terminated = true; 
+              System.out.println(owner.b1.terminateString());
+            }
             handleMsg(line);
+          }
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
