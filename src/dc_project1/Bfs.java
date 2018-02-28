@@ -8,38 +8,39 @@ import java.util.StringJoiner;
 public class Bfs {
   int parent;
   ArrayList<String> children = new ArrayList<String>();
-  HashMap<Integer, Boolean> haveSearchedUs;
-  HashMap<Integer, Boolean> haveAcked;
-  int ackCtr;
+  HashMap<Integer, Boolean> haveSearchedUs = new HashMap<Integer, Boolean>();
+  HashMap<Integer, Boolean> haveAcked = new HashMap<Integer, Boolean>();
+  HashMap<Integer, Boolean> haveSent = new HashMap<Integer, Boolean>();
+  HashMap<Integer, Boolean> rcvdFromNbr = new HashMap<Integer, Boolean>();
+  int ackCtr, sendCtr;
   Node owner;
   int degree = Integer.MAX_VALUE;
   int maxDegree = 0;
   int[] neighbors;
   int round = 0;
+  int initRound = -1; //round at which node rcvs first search msg
   int countRecMsgs = 0;
-  HashMap<Integer, Boolean> rcvdFromNbr;
   
   public Bfs(boolean isLeader, int[] neighbors, Node owner)
   {
     this.neighbors = neighbors;
     this.owner = owner;
     System.out.println(owner.uid + " started; Leadership=" + isLeader);
-    if(isLeader)
+    if(isLeader){
       degree = 0;
-    haveAcked = new HashMap<Integer, Boolean>();
-    haveSearchedUs = new HashMap<Integer, Boolean>();
-    rcvdFromNbr = new HashMap<Integer, Boolean>();
+      parent = owner.uid;
+    }
     ackCtr = 0;
+    sendCtr = 0;
     for (int i=0; i<neighbors.length; i++){
         haveAcked.put(neighbors[i], false);
+        haveSent.put(neighbors[i], false);
         haveSearchedUs.put(neighbors[i], false);
         rcvdFromNbr.put(neighbors[i], false);
     }
   }
   
   public void handleMsg(String msg){
-//    if(owner.isLeader())
-//      System.out.println("Leader's ack ctr: " + ackCtr);
     if(msg.split("\\s")[0].equalsIgnoreCase("BFS")){
       BfsMessage m = BfsMessage.toBfsMsg(msg);
       if(!m.type.equals("dummy"))
@@ -61,12 +62,18 @@ public class Bfs {
     }
   }
   
+  private boolean marked(){
+    assert (degree < Integer.MAX_VALUE) == (initRound!=-1);
+    return initRound!=-1;
+  }
+  
   private void handleSearchMsg(BfsMessage m){
     haveSearchedUs.put(m.senderUID, true);
     if(!haveAcked.get(m.senderUID))
       ackCtr++;
     haveAcked.put(m.senderUID, true);
-    if((m.degree+1 < degree)){
+    if(!marked()){
+      initRound = round;
       parent = m.senderUID;
       degree = m.degree+1;
       if(degree>maxDegree)
@@ -98,15 +105,23 @@ public class Bfs {
         type = "pos-ack";
       else
         type = "dummy";
-//      System.out.println(owner.uid + " sends to " + nbr + ": " + type);
     }
     else if(haveSearchedUs.get(nbr))
       type = "neg-ack";
-    else if(degree < Integer.MAX_VALUE)
+    else if(owner.isLeader() || (marked() && round>initRound))  // nodes should not send search in the same round they received search
       type = "search";
     else
       type = "dummy";
-    System.out.println(owner.uid + " sends to " + nbr + ": " + type + " (PARENT IS " + parent + ", Round="+round);
+//    System.out.println(owner.uid + " sends to " + nbr + ": " + type + 
+//            " (PARENT IS " + parent + ", Round="+round + ")   " +
+//            "Acks: " + ackCtr+"/"+haveAcked.size() + " " + haveAcked.toString());
+    haveSent.put(nbr, true);
+    sendCtr++;
+    if(sendCtr==haveSent.size()){
+      sendCtr = 0;
+      for (int i=0; i<neighbors.length; i++)
+          haveSent.put(neighbors[i], false);
+    }
     return new BfsMessage(type, owner.uid, owner.leader, degree, maxDegree, round);
   }
   
@@ -122,9 +137,10 @@ public class Bfs {
   }
   
   public boolean allNbrsAcked(){
-    if(owner.isLeader())
-      System.out.println("Leader Acks: " + ackCtr+"/"+haveAcked.size() + " " + haveAcked.toString());
     return ackCtr == haveAcked.size();
+  }
+  public boolean allNbrsSent(){
+    return sendCtr == 0;
   }
   
   public String constructLogMsg_Receive(BfsMessage bmsg){

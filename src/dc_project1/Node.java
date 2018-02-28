@@ -81,7 +81,7 @@ class Node{
                     Socket s = new Socket(hostname, port);
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
-                    while (!terminated) {
+                    while (!(terminated && b1.allNbrsSent())) {
                         if (leader==-1){
                           PelegMessage msg = p1.genMsg();
                           writeToLog(p1.constructLogMsg_Send(msg, hostname, port));

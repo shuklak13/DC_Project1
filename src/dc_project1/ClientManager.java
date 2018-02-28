@@ -24,16 +24,19 @@ public class ClientManager implements Runnable {
           BufferedReader in = new BufferedReader(new InputStreamReader(client.getInputStream()));
           while (!owner.terminated && (line = in.readLine()) != null){
             handleMsg(line);
-            if(owner.b1!=null && owner.isLeader() && owner.b1.allNbrsAcked()){
-              owner.terminated = true; 
-              System.out.println(owner.b1.terminateString());
-//              System.exit(0);
-            }
+            if(owner.b1!=null && owner.isLeader() && owner.b1.allNbrsAcked())
+              terminate();
           }
 		} catch(IOException e) {
 			e.printStackTrace();
 		}
 	}
+    
+    public void terminate(){
+      owner.terminated = true; 
+      System.out.println(owner.b1.terminateString());
+      System.exit(0);
+    }
     
     public void handleMsg(String m){
       if (owner.leader == -1)
