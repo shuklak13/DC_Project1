@@ -2,7 +2,6 @@
 package dc_project1;
 
 import java.util.HashMap;
-import java.lang.*;
 import java.util.ArrayList;
 import java.util.StringJoiner;
 
@@ -16,7 +15,7 @@ public class Bfs {
   int degree = Integer.MAX_VALUE;
   int maxDegree = 0;
   int[] neighbors;
-  int round;
+  int round = 0;
   int countRecMsgs = 0;
   HashMap<Integer, Boolean> rcvdFromNbr;
   
@@ -43,26 +42,32 @@ public class Bfs {
 //      System.out.println("Leader's ack ctr: " + ackCtr);
     if(msg.split("\\s")[0].equalsIgnoreCase("BFS")){
       BfsMessage m = BfsMessage.toBfsMsg(msg);
+      if(!m.type.equals("dummy"))
+        owner.writeToLog(constructLogMsg_Receive(m));
       synchronized(this){
         if(round <= m.round){
           if(m.maxDegree > maxDegree)
             maxDegree = m.maxDegree;
-          if(m.type.equals("search") && (m.degree+1 < degree)){
-              parent = m.senderUID;
-              haveAcked.put(m.senderUID, true);
-              haveSearchedUs.put(m.senderUID, true);
+          if(m.type.equals("search")){
+            haveSearchedUs.put(m.senderUID, true);
+            if(!haveAcked.get(m.senderUID))
               ackCtr++;
+            haveAcked.put(m.senderUID, true);
+            if((m.degree+1 < degree)){
+              parent = m.senderUID;
               degree = m.degree+1;
               if(degree>maxDegree)
                 maxDegree = degree;
             }
+          }
           else if(m.type.endsWith("ack")){
-//            if(owner.isLeader())
-//              System.out.println(m.senderUID + " has acked " + m.type);
             if(m.type.startsWith("pos"))
               children.add(String.valueOf(m.senderUID));
+            else if(owner.isLeader())
+              System.out.println(m.senderUID + " send " + m.type);
+            if(!haveAcked.get(m.senderUID))
+              ackCtr++;
             haveAcked.put(m.senderUID, true);
-            ackCtr++;
           }
           rcvdFromNbr.put(m.senderUID, Boolean.TRUE);
           countRecMsgs++;
@@ -79,16 +84,20 @@ public class Bfs {
   
   public BfsMessage genMsg(int nbr){
     String type;
-    if(owner.isLeader() && allNbrsAcked())
-      type = "terminate";
-    else if(nbr==parent && allNbrsAcked())
-      type = "pos-ack";
-    else if(haveSearchedUs.get(nbr) && nbr!=parent)
+    if(nbr==parent){
+      if(allNbrsAcked())
+        type = "pos-ack";
+      else
+        type = "dummy";
+//      System.out.println(owner.uid + " sends to " + nbr + ": " + type);
+    }
+    else if(haveSearchedUs.get(nbr))
       type = "neg-ack";
     else if(degree < Integer.MAX_VALUE)
       type = "search";
     else
       type = "dummy";
+    System.out.println(owner.uid + " sends to " + nbr + ": " + type + " (PARENT IS " + parent + ", Round="+round);
     return new BfsMessage(type, owner.uid, owner.leader, degree, maxDegree, round);
   }
   
@@ -104,11 +113,13 @@ public class Bfs {
   }
   
   public boolean allNbrsAcked(){
+    if(owner.isLeader())
+      System.out.println("Leader Acks: " + ackCtr+"/"+haveAcked.size() + " " + haveAcked.toString());
     return ackCtr == haveAcked.size();
   }
   
   public String constructLogMsg_Receive(BfsMessage bmsg){
-    return "(BFS) I receive: " + bmsg.toReadableString();
+    return "(BFS) I receive: " + bmsg.toReadableString() + "\tReceived ACKs from nodes: " + haveAcked.toString();
   }
   public String constructLogMsg_Send(BfsMessage bmsg, String hostname, int port){
     return "(BFS) I send the following to " + hostname+":"+port + " " + bmsg.toReadableString();

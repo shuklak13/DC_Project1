@@ -7,6 +7,6 @@
    8     dc04.utdallas.edu   1235
 
 # Node#   Neighbors
-   5      200
+   5      200 8
    200    5     8
-   8      200
+   8      200 5

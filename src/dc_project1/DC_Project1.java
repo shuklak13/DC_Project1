@@ -38,7 +38,7 @@ public class DC_Project1 {
         while(sc.hasNext()){
           String line = sc.nextLine();
           String[] params = line.trim().split("\\s+");
-          System.out.println("Line: " + line + "\tLength = " + params.length);
+          System.out.println(line);
           if(params.length>1 && !params[0].equals("#")){
             int uid = Integer.valueOf(params[0]);
             if (nodes.containsKey(uid))

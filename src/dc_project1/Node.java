@@ -123,7 +123,7 @@ class Node{
                   while(!terminated)
                     try {
                         Socket s = ss.accept();
-                        ClientManager w = new ClientManager(s, t, log);
+                        ClientManager w = new ClientManager(s, t);
                         Thread t = new Thread(w);
                         t.start();
                     } catch(IOException e) {

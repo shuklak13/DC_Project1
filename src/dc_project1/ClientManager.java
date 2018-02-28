@@ -7,13 +7,11 @@ import java.lang.*;
 public class ClientManager implements Runnable {
 	
 	private Socket client;
-    BufferedWriter log;
     Node owner;
 
-	public ClientManager(Socket client, Node owner, BufferedWriter log) {
+	public ClientManager(Socket client, Node owner) {
 		this.client = client;
         this.owner = owner;
-        this.log = log;
 	}
 
 	public ClientManager(Socket client) {
@@ -29,7 +27,7 @@ public class ClientManager implements Runnable {
             if(owner.b1!=null && owner.isLeader() && owner.b1.allNbrsAcked()){
               owner.terminated = true; 
               System.out.println(owner.b1.terminateString());
-              System.exit(0);
+//              System.exit(0);
             }
           }
 		} catch(IOException e) {
@@ -40,7 +38,7 @@ public class ClientManager implements Runnable {
     public void handleMsg(String m){
       if (owner.leader == -1)
           owner.leader = owner.p1.handleMsg(m);
-      else{
+      if (owner.leader != -1){
           if(owner.b1==null)
             owner.initiateBfs();
           owner.b1.handleMsg(m);
