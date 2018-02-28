@@ -10,6 +10,7 @@ PROJDIR=$HOME/DC_Project1
 CONFIGLOCAL=$HOME/DC_Project1/config.txt
 
 # Directory your java classes are in
+javac=$HOME/DC_Project1/src/dc_project1/*.java
 BINDIR=$HOME/DC_Project1/src/dc_project1
 
 # Your main project class
