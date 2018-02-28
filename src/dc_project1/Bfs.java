@@ -45,7 +45,7 @@ public class Bfs {
       if(!m.type.equals("dummy"))
         owner.writeToLog(constructLogMsg_Receive(m));
       synchronized(this){
-        if(!rcvdFromNbr.get(m.senderUID) && round <= m.round){
+        if(round <= m.round){
           if(m.maxDegree > maxDegree)
             maxDegree = m.maxDegree;
           if(m.type.equals("search"))
