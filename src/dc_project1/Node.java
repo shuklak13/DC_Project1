@@ -25,6 +25,7 @@ class Node{
     Bfs b1;
     BufferedWriter log;
     boolean terminated = false;
+    boolean test = false;
 
     public Node(int u, String hn, int p, int[] nghbrs, boolean test) {
       this(u, hn, p, test);
@@ -32,20 +33,22 @@ class Node{
     }
 
     public Node(int u, String hn, int p, boolean test) {
+        this.test = test;
         uid = u;
-        if(test)
+        if(test){
           hostname = "localhost";
+          try{
+            log = new BufferedWriter(new FileWriter(new File("logs", Integer.toString(u)+".txt")));
+            log.write("Timestamp\tMessage");
+          }
+          catch(IOException e){
+            System.out.println("FAIL: Attempted to write to " + Integer.toString(u)+".txt");
+            e.printStackTrace();
+          }
+        }
         else
           hostname = hn;
         port = p;
-        try{
-          log = new BufferedWriter(new FileWriter(new File("logs", Integer.toString(u)+".txt")));
-          log.write("Timestamp\tMessage");
-        }
-        catch(IOException e){
-          System.out.println("FAIL: Attempted to write to " + Integer.toString(u)+".txt");
-          e.printStackTrace();
-        }
         startServer();
     }
     
@@ -54,13 +57,14 @@ class Node{
     }
     
     public void writeToLog(String s){
-      try{
-        log.append(s);
-        log.newLine();
-      }
-      catch(IOException e){
-        System.out.println("IOException: " + e);
-      }
+      if(test)
+        try{
+          log.append(s);
+          log.newLine();
+        }
+        catch(IOException e){
+          System.out.println("IOException: " + e);
+        }
     }
 
     public void connectToNeighbors(HashMap<Integer, Integer> uids2ports, HashMap<Integer, String> uids2hosts){

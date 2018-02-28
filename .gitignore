@@ -1,6 +1,6 @@
 /build/
 /dist/
-*.txt
-*.txt
-nbproject/private/private.xml
-nbproject/private/private.xml
+/logs/
+nbproject*
+config*
+*.class

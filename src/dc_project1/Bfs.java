@@ -25,7 +25,7 @@ public class Bfs {
   {
     this.neighbors = neighbors;
     this.owner = owner;
-    System.out.println(owner.uid + " started; Leadership=" + isLeader);
+    //System.out.println(owner.uid + " started; Leadership=" + isLeader);
     if(isLeader){
       degree = 0;
       parent = owner.uid;
