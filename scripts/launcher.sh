@@ -1,19 +1,19 @@
 #!/bin/bash
 
 # Change this to your netid
-netid=sxg122830
+netid=kxs141930
 
 # Root directory of your project
-PROJDIR=/people/cs/s/sxg122830/TestProj
+PROJDIR=$HOME/DC_Project1
 
 # Directory where the config file is located on your local system
-CONFIGLOCAL=$HOME/launch/config.txt
+CONFIGLOCAL=$HOME/DC_Project1/config.txt
 
 # Directory your java classes are in
-BINDIR=$PROJDIR/bin
+BINDIR=$HOME/DC_Project1/src/dc_project1
 
 # Your main project class
-PROG=HelloWorld
+PROG=DC_Project1
 
 n=0
 
