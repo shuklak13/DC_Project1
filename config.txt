@@ -1,5 +1,5 @@
 # Number of nodes in the system
-5
+6
 
 # Node#    Hostname          Port#
    5     dc02.utdallas.edu   1234
