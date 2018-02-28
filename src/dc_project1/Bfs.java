@@ -45,41 +45,50 @@ public class Bfs {
       if(!m.type.equals("dummy"))
         owner.writeToLog(constructLogMsg_Receive(m));
       synchronized(this){
-        if(round <= m.round){
+        if(!rcvdFromNbr.get(m.senderUID) && round <= m.round){
           if(m.maxDegree > maxDegree)
             maxDegree = m.maxDegree;
-          if(m.type.equals("search")){
-            haveSearchedUs.put(m.senderUID, true);
-            if(!haveAcked.get(m.senderUID))
-              ackCtr++;
-            haveAcked.put(m.senderUID, true);
-            if((m.degree+1 < degree)){
-              parent = m.senderUID;
-              degree = m.degree+1;
-              if(degree>maxDegree)
-                maxDegree = degree;
-            }
-          }
-          else if(m.type.endsWith("ack")){
-            if(m.type.startsWith("pos"))
-              children.add(String.valueOf(m.senderUID));
-            else if(owner.isLeader())
-              System.out.println(m.senderUID + " send " + m.type);
-            if(!haveAcked.get(m.senderUID))
-              ackCtr++;
-            haveAcked.put(m.senderUID, true);
-          }
-          rcvdFromNbr.put(m.senderUID, Boolean.TRUE);
+          if(m.type.equals("search"))
+            handleSearchMsg(m);
+          else if(m.type.endsWith("ack"))
+            handleAckMsg(m);
           countRecMsgs++;
-          if(countRecMsgs==rcvdFromNbr.size()){
-            round++;
-            countRecMsgs=0;
-            for (int i=0; i<neighbors.length; i++)
-                this.rcvdFromNbr.put(neighbors[i], false);
-          }
+          rcvdFromNbr.put(m.senderUID, true);
+          if(countRecMsgs==rcvdFromNbr.size())
+            nextRound();
         }
       }
     }
+  }
+  
+  private void handleSearchMsg(BfsMessage m){
+    haveSearchedUs.put(m.senderUID, true);
+    if(!haveAcked.get(m.senderUID))
+      ackCtr++;
+    haveAcked.put(m.senderUID, true);
+    if((m.degree+1 < degree)){
+      parent = m.senderUID;
+      degree = m.degree+1;
+      if(degree>maxDegree)
+        maxDegree = degree;
+    }
+  }
+  
+  private void handleAckMsg(BfsMessage m){
+    if(m.type.startsWith("pos"))
+      children.add(String.valueOf(m.senderUID));
+    else if(owner.isLeader())
+      System.out.println(m.senderUID + " send " + m.type);
+    if(!haveAcked.get(m.senderUID))
+      ackCtr++;
+    haveAcked.put(m.senderUID, true);
+  }
+  
+  private void nextRound(){
+    round++;
+    countRecMsgs=0;
+    for (int i=0; i<neighbors.length; i++)
+        this.rcvdFromNbr.put(neighbors[i], false);
   }
   
   public BfsMessage genMsg(int nbr){
