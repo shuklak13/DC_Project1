@@ -36,7 +36,7 @@ class BfsMessage{
     
     public String toReadableString(){
       StringJoiner sj = new StringJoiner("\t");
-        sj.add("\nSender: " + senderUID);
+        sj.add("Sender: " + senderUID);
         sj.add("Message Type: " + type);
         sj.add("Height: " + height);
         sj.add("Max Height: " + maxHeight);
