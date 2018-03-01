@@ -7,14 +7,15 @@ class BfsMessage{
     String type;
     int senderUID;
     int leader; //used for broadcasting leader after termination of Peleg
-    int degree, maxDegree;
+    int height, maxHeight, maxDegree;
     int round;
 
-    public BfsMessage(String t, int s, int l, int d, int md, int rnd){
+    public BfsMessage(String t, int s, int l, int h, int mh, int rnd, int md){
       type = t;
       senderUID = s;
       leader = l;
-      degree = d;
+      height = h;
+      maxHeight = mh;
       maxDegree = md;
       round = rnd;
     }
@@ -26,9 +27,10 @@ class BfsMessage{
         sb.append(type).append(" ");
         sb.append(senderUID).append(" ");
         sb.append(leader).append(" ");
-        sb.append(degree).append(" ");
-        sb.append(maxDegree).append(" ");
+        sb.append(height).append(" ");
+        sb.append(maxHeight).append(" ");
         sb.append(round).append(" ");
+        sb.append(maxDegree).append(" ");
         return sb.toString();
     }
     
@@ -36,7 +38,8 @@ class BfsMessage{
       StringJoiner sj = new StringJoiner("\t");
         sj.add("\nSender: " + senderUID);
         sj.add("Message Type: " + type);
-        sj.add("Degree: " + degree);
+        sj.add("Height: " + height);
+        sj.add("Max Height: " + maxHeight);
         sj.add("Max Degree: " + maxDegree);
         sj.add("Round: " + round);
       return sj.toString();
@@ -53,6 +56,7 @@ class BfsMessage{
                             Integer.parseInt(parsed_msg[3]),
                             Integer.parseInt(parsed_msg[4]),
                             Integer.parseInt(parsed_msg[5]),
-                            Integer.parseInt(parsed_msg[6]));
+                            Integer.parseInt(parsed_msg[6]),
+                            Integer.parseInt(parsed_msg[7]));
     }
 }
