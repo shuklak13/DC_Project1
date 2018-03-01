@@ -7,7 +7,7 @@ netid=kxs141930
 PROJDIR=$HOME/DC_Project1
 
 # Directory where the config file is located on your local system
-CONFIGLOCAL=$HOME/DC_Project1/config.txt
+CONFIGLOCAL=$HOME/DC_Project1/config/config.txt
 
 # Directory your java classes are in
 javac $HOME/DC_Project1/src/dc_project1/*.java
@@ -25,14 +25,13 @@ cat $CONFIGLOCAL | sed -e "s/#.*//" | sed -e "/^\s*$/d" |
     read i
     echo $i
     while [[ $n -gt 0 ]]
-    # echo $n
     do
-    	echo "do loop"
+    	echo $n
     	read line
     	node=$( echo $line | awk '{ print $1 }' )
         host=$( echo $line | awk '{ print $2 }' )
 	
-	gnome-terminal -e "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $netid@$host java -jar $JAR $node; $SHELL" &
+	gnome-terminal -e "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $netid@$host java -jar $JAR $CONFIGLOCAL $node; $SHELL" &
 
         n=$(( n - 1 ))
     done
