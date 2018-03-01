@@ -85,7 +85,8 @@ class Node{
                     Socket s = new Socket(hostname, port);
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
-                    while (!(terminated && b1.allNbrsSent())) {
+                    //while (!(terminated && b1.allNbrsAcked())) {
+                    while (true) {
                         if (leader==-1){
                           PelegMessage msg = p1.genMsg();
                           writeToLog(p1.constructLogMsg_Send(msg, hostname, port));
@@ -95,7 +96,8 @@ class Node{
                           if(b1==null)
                             initiateBfs();
                           BfsMessage msg = b1.genMsg(neighborUID);
-                          if(msg.type.equalsIgnoreCase("pos-ack") && !terminated){  //!terminated is to prevent terminate msg from printing mutiple times
+                          if(msg.type.equalsIgnoreCase("pos-ack") && !terminated){  
+                          //!terminated is to prevent terminate msg from printing mutiple times
                             terminated = true; 
                             System.out.println(b1.terminateString());
                           }

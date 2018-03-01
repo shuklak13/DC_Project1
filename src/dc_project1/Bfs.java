@@ -2,16 +2,16 @@
 package dc_project1;
 
 import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.StringJoiner;
 
 public class Bfs {
   int parent;
-  ArrayList<String> children = new ArrayList<String>();
-  HashMap<Integer, Boolean> haveSearchedUs = new HashMap<Integer, Boolean>();
-  HashMap<Integer, Boolean> haveAcked = new HashMap<Integer, Boolean>();
-  HashMap<Integer, Boolean> haveSent = new HashMap<Integer, Boolean>();
-  HashMap<Integer, Boolean> rcvdFromNbr = new HashMap<Integer, Boolean>();
+  HashSet<String> children = new HashSet<String>();
+  HashMap<Integer, Boolean> haveSearchedUs = new HashMap<Integer, Boolean>(); // to send a neg-ack
+  HashMap<Integer, Boolean> haveRcvdAck = new HashMap<Integer, Boolean>();    // to ensure we've received from everyone before terminating )posack)
+  HashMap<Integer, Boolean> haveSentAck = new HashMap<Integer, Boolean>();    // to ensure we've sent to everyone before terminating )posack)
+  HashMap<Integer, Boolean> rcvdFromNbr = new HashMap<Integer, Boolean>();    // to increment rounds
   int ackCtr, sendCtr;
   Node owner;
   int height = Integer.MAX_VALUE;
@@ -26,7 +26,8 @@ public class Bfs {
   {
     this.neighbors = neighbors;
     this.owner = owner;
-    //System.out.println(owner.uid + " started; Leadership=" + isLeader);
+    if(owner.test)
+      System.out.println(owner.uid + " started; Leadership=" + isLeader);
     if(isLeader){
       height = 0;
       parent = owner.uid;
@@ -34,8 +35,8 @@ public class Bfs {
     ackCtr = 0;
     sendCtr = 0;
     for (int i=0; i<neighbors.length; i++){
-        haveAcked.put(neighbors[i], false);
-        haveSent.put(neighbors[i], false);
+        haveRcvdAck.put(neighbors[i], false);
+        haveSentAck.put(neighbors[i], false);
         haveSearchedUs.put(neighbors[i], false);
         rcvdFromNbr.put(neighbors[i], false);
     }
@@ -56,6 +57,8 @@ public class Bfs {
       if(!m.type.equals("dummy"))
         owner.writeToLog(constructLogMsg_Receive(m));
       synchronized(this){
+        if(owner.test && owner.isLeader())
+          System.out.println("Leader rcvd: " + m.toReadableString());
         if(round <= m.round){
           if(m.type.equals("search"))
             handleSearchMsg(m);
@@ -76,11 +79,25 @@ public class Bfs {
     return initRound!=-1;
   }
   
+  private void updateRcvAck(int senderUid){
+    if(owner.test && owner.isLeader())
+      System.out.println("Leader ack status (before): " + ackCtr + ", " + haveRcvdAck.toString());
+    if(!haveRcvdAck.get(senderUid))
+      ackCtr++;
+    haveRcvdAck.put(senderUid, true);
+    if(owner.test && owner.isLeader())
+      System.out.println("Leader ack status (after): " + ackCtr + ", " + haveRcvdAck.toString());
+  }
+  
+  private void updateSendAck(int nbr){
+    if(!haveSentAck.get(nbr))
+      sendCtr++;
+    haveSentAck.put(nbr, true);
+  }
+  
   private void handleSearchMsg(BfsMessage m){
     haveSearchedUs.put(m.senderUID, true);
-    if(!haveAcked.get(m.senderUID))
-      ackCtr++;
-    haveAcked.put(m.senderUID, true);
+    updateRcvAck(m.senderUID);
     if(!marked()){
       initRound = round;
       parent = m.senderUID;
@@ -91,13 +108,12 @@ public class Bfs {
   }
   
   private void handleAckMsg(BfsMessage m){
-    if(m.type.startsWith("pos"))
+    if(m.type.startsWith("pos")){
       children.add(String.valueOf(m.senderUID));
-    else if(owner.isLeader())
-      System.out.println(m.senderUID + " send " + m.type);
-    if(!haveAcked.get(m.senderUID))
-      ackCtr++;
-    haveAcked.put(m.senderUID, true);
+      //if(owner.isLeader())
+        //System.out.println("LEader rcvd posack from " + m.senderUID);
+    }
+    updateRcvAck(m.senderUID);
   }
   
   private void nextRound(){
@@ -117,28 +133,28 @@ public class Bfs {
   public BfsMessage genMsg(int nbr){
     String type;
     if(nbr==parent){
-      if(allNbrsAcked())
+      if(allNbrsAckedButParent() || allNbrsAcked()){
         type = "pos-ack";
+        updateSendAck(nbr);
+      }
       else
         type = "dummy";
     }
-    else if(haveSearchedUs.get(nbr))
+    else if(haveSearchedUs.get(nbr)){
       type = "neg-ack";
-    else if(owner.isLeader() || (marked() && round>initRound))  // nodes should not send search in the same round they received search
+      updateSendAck(nbr);
+      }
+    else if(owner.isLeader() || (marked() && round>initRound)){  // nodes should not send search in the same round they received search
       type = "search";
+      updateSendAck(nbr);
+    }
     else
       type = "dummy";
     if(owner.test)
       System.out.println(owner.uid + " sends to " + nbr + ": " + type + 
             " (PARENT IS " + parent + ", Round="+round + ")   " +
-            "Acks: " + ackCtr+"/"+haveAcked.size() + " " + haveAcked.toString());
-    haveSent.put(nbr, true);
-    sendCtr++;
-    if(sendCtr==haveSent.size()){
-      sendCtr = 0;
-      for (int i=0; i<neighbors.length; i++)
-          haveSent.put(neighbors[i], false);
-    }
+            "RcvAcks: " + ackCtr+"/"+haveRcvdAck.size() + " " + haveRcvdAck.toString() +
+            " SndAcks: " + sendCtr+"/"+haveSentAck.size() + " " + haveSentAck.toString());
     return new BfsMessage(type, owner.uid, owner.leader, height, maxHeight, round, degree());
   }
   
@@ -156,15 +172,16 @@ public class Bfs {
     return finalOutput.toString();
   }
   
-  public boolean allNbrsAcked(){
-    return ackCtr == haveAcked.size();
+  public boolean allNbrsAckedButParent(){
+    return ackCtr == haveRcvdAck.size() && sendCtr==haveSentAck.size()-1; //-1 because won't send to parent until termination
   }
-  public boolean allNbrsSent(){
-    return sendCtr == 0;
+  
+  public boolean allNbrsAcked(){
+    return ackCtr == haveRcvdAck.size() && sendCtr==haveSentAck.size(); //-1 because won't send to parent until termination
   }
   
   public String constructLogMsg_Receive(BfsMessage bmsg){
-    return "(BFS) I receive: " + bmsg.toReadableString() + "\tReceived ACKs from nodes: " + haveAcked.toString();
+    return "(BFS) I receive: " + bmsg.toReadableString() + "\tReceived ACKs from nodes: " + haveRcvdAck.toString();
   }
   public String constructLogMsg_Send(BfsMessage bmsg, String hostname, int port){
     return "(BFS) I send the following to " + hostname+":"+port + " " + bmsg.toReadableString();
