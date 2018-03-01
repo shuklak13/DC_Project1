@@ -2,12 +2,12 @@
 package dc_project1;
 
 import java.util.HashMap;
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.StringJoiner;
 
 public class Bfs {
   int parent;
-  ArrayList<String> children = new ArrayList<String>();
+  HashSet<String> children = new HashSet<String>();
   HashMap<Integer, Boolean> haveSearchedUs = new HashMap<Integer, Boolean>(); // to send a neg-ack
   HashMap<Integer, Boolean> haveRcvdAck = new HashMap<Integer, Boolean>();    // to ensure we've received from everyone before terminating )posack)
   HashMap<Integer, Boolean> haveSentAck = new HashMap<Integer, Boolean>();    // to ensure we've sent to everyone before terminating )posack)
@@ -57,7 +57,7 @@ public class Bfs {
       if(!m.type.equals("dummy"))
         owner.writeToLog(constructLogMsg_Receive(m));
       synchronized(this){
-        if(owner.isLeader())
+        if(owner.test && owner.isLeader())
           System.out.println("Leader rcvd: " + m.toReadableString());
         if(round <= m.round){
           if(m.type.equals("search"))
@@ -80,12 +80,12 @@ public class Bfs {
   }
   
   private void updateRcvAck(int senderUid){
-    if(owner.isLeader())
+    if(owner.test && owner.isLeader())
       System.out.println("Leader ack status (before): " + ackCtr + ", " + haveRcvdAck.toString());
     if(!haveRcvdAck.get(senderUid))
       ackCtr++;
     haveRcvdAck.put(senderUid, true);
-    if(owner.isLeader())
+    if(owner.test && owner.isLeader())
       System.out.println("Leader ack status (after): " + ackCtr + ", " + haveRcvdAck.toString());
   }
   
@@ -110,8 +110,8 @@ public class Bfs {
   private void handleAckMsg(BfsMessage m){
     if(m.type.startsWith("pos")){
       children.add(String.valueOf(m.senderUID));
-      if(owner.isLeader())
-        System.out.println("LEader rcvd posack from " + m.senderUID);
+      //if(owner.isLeader())
+        //System.out.println("LEader rcvd posack from " + m.senderUID);
     }
     updateRcvAck(m.senderUID);
   }
@@ -133,7 +133,7 @@ public class Bfs {
   public BfsMessage genMsg(int nbr){
     String type;
     if(nbr==parent){
-      if(allNbrsAckedButParent()){
+      if(allNbrsAckedButParent() || allNbrsAcked()){
         type = "pos-ack";
         updateSendAck(nbr);
       }

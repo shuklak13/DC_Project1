@@ -2,14 +2,14 @@
 7
 
 # Node#    Hostname          Port#
-   5     dc02.utdallas.edu   1234
-   200   dc03.utdallas.edu   1233
-   8     dc04.utdallas.edu   1231
-   184   dc05.utdallas.edu   1232
-   9     dc06.utdallas.edu   1237
-   37    dc07.utdallas.edu   1235
-   78    dc08.utdallas.edu   1236
-   6    dc08.utdallas.edu   1230
+   5     localhost   1234
+   200   localhost   1233
+   8     localhost   1231
+   184   localhost   1232
+   9     localhost   1237
+   37    localhost   1235
+   78    localhost   1236
+   6     localhost   1230
 
 # Node#   Neighbors
    5      200   8    78
