@@ -14,7 +14,8 @@ public class Bfs {
   HashMap<Integer, Boolean> rcvdFromNbr = new HashMap<Integer, Boolean>();
   int ackCtr, sendCtr;
   Node owner;
-  int degree = Integer.MAX_VALUE;
+  int height = Integer.MAX_VALUE;
+  int maxHeight = 0;
   int maxDegree = 0;
   int[] neighbors;
   int round = 0;
@@ -27,7 +28,7 @@ public class Bfs {
     this.owner = owner;
     //System.out.println(owner.uid + " started; Leadership=" + isLeader);
     if(isLeader){
-      degree = 0;
+      height = 0;
       parent = owner.uid;
     }
     ackCtr = 0;
@@ -40,6 +41,15 @@ public class Bfs {
     }
   }
   
+  public void updateDegreeAndHeight(BfsMessage m){
+    if(m.maxHeight > maxHeight)
+      maxHeight = m.maxHeight;
+    if(m.maxDegree > maxDegree)
+      maxDegree = m.maxDegree;
+    if(degree() > maxDegree)
+      maxDegree = degree();
+  }
+  
   public void handleMsg(String msg){
     if(msg.split("\\s")[0].equalsIgnoreCase("BFS")){
       BfsMessage m = BfsMessage.toBfsMsg(msg);
@@ -47,8 +57,6 @@ public class Bfs {
         owner.writeToLog(constructLogMsg_Receive(m));
       synchronized(this){
         if(round <= m.round){
-          if(m.maxDegree > maxDegree)
-            maxDegree = m.maxDegree;
           if(m.type.equals("search"))
             handleSearchMsg(m);
           else if(m.type.endsWith("ack"))
@@ -57,13 +65,14 @@ public class Bfs {
           rcvdFromNbr.put(m.senderUID, true);
           if(countRecMsgs==rcvdFromNbr.size())
             nextRound();
+          updateDegreeAndHeight(m);
         }
       }
     }
   }
   
   private boolean marked(){
-    assert (degree < Integer.MAX_VALUE) == (initRound!=-1);
+    assert (height < Integer.MAX_VALUE) == (initRound!=-1);
     return initRound!=-1;
   }
   
@@ -75,9 +84,9 @@ public class Bfs {
     if(!marked()){
       initRound = round;
       parent = m.senderUID;
-      degree = m.degree+1;
-      if(degree>maxDegree)
-        maxDegree = degree;
+      height = m.height+1;
+      if(height>maxHeight)
+        maxHeight = height;
     }
   }
   
@@ -98,6 +107,13 @@ public class Bfs {
         this.rcvdFromNbr.put(neighbors[i], false);
   }
   
+  public int degree(){
+    if(owner.isLeader())
+      return children.size();
+    else
+      return 1+children.size();
+  }
+  
   public BfsMessage genMsg(int nbr){
     String type;
     if(nbr==parent){
@@ -112,9 +128,10 @@ public class Bfs {
       type = "search";
     else
       type = "dummy";
-//    System.out.println(owner.uid + " sends to " + nbr + ": " + type + 
-//            " (PARENT IS " + parent + ", Round="+round + ")   " +
-//            "Acks: " + ackCtr+"/"+haveAcked.size() + " " + haveAcked.toString());
+    if(owner.test)
+      System.out.println(owner.uid + " sends to " + nbr + ": " + type + 
+            " (PARENT IS " + parent + ", Round="+round + ")   " +
+            "Acks: " + ackCtr+"/"+haveAcked.size() + " " + haveAcked.toString());
     haveSent.put(nbr, true);
     sendCtr++;
     if(sendCtr==haveSent.size()){
@@ -122,17 +139,20 @@ public class Bfs {
       for (int i=0; i<neighbors.length; i++)
           haveSent.put(neighbors[i], false);
     }
-    return new BfsMessage(type, owner.uid, owner.leader, degree, maxDegree, round);
+    return new BfsMessage(type, owner.uid, owner.leader, height, maxHeight, round, degree());
   }
   
   public String terminateString(){
     StringJoiner finalOutput = new StringJoiner("\t");
-      finalOutput.add(String.valueOf(owner.uid));
+      finalOutput.add(String.valueOf(owner.uid) + " has terminated.");
       finalOutput.add("My Parent: " + parent);
       finalOutput.add("My Children: " + String.join(",", children));
-      finalOutput.add("My Degree: " + degree);
+      finalOutput.add("My Degree: " + degree());
+      finalOutput.add("My Height: " + height);
     if(owner.isLeader()){
-      finalOutput.add("Max Degree: " + maxDegree);}
+      finalOutput.add("\nMax Degree: " + maxDegree);
+      finalOutput.add("Max Height: " + maxHeight);
+    }
     return finalOutput.toString();
   }
   

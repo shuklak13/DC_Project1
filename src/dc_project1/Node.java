@@ -95,7 +95,7 @@ class Node{
                           if(b1==null)
                             initiateBfs();
                           BfsMessage msg = b1.genMsg(neighborUID);
-                          if(msg.type.equalsIgnoreCase("pos-ack")){
+                          if(msg.type.equalsIgnoreCase("pos-ack") && !terminated){  //!terminated is to prevent terminate msg from printing mutiple times
                             terminated = true; 
                             System.out.println(b1.terminateString());
                           }

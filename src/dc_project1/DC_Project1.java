@@ -29,7 +29,7 @@ public class DC_Project1 {
                 node.connectToNeighbors(uids2ports, uids2hosts);
         }
         catch(IOException e){
-            System.out.println("File " + args[1] + " not found");
+            System.out.println("File " + args[0] + " not found");
             System.exit(0);
         }
     }
