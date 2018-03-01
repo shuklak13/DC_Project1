@@ -7,15 +7,22 @@ import java.util.HashMap;
 
 public class DC_Project1 {
     static boolean test = false;
+    static boolean distributed = false;
+    static int nodeId;
     public static void main(String[] args){
-        ArrayList<Node> nodes;
-        if(args.length>=2 && args[1].equalsIgnoreCase("test")){
-          test = true;
-          System.out.println("Running in test (host will be localhost)");
+        if(args.length>=2){
+          if(args[1].equalsIgnoreCase("test")){
+            test = true;
+            System.out.println("Running in test (host will be localhost)");
+          }
+          if(args[1].matches("^\\d+$")){
+            distributed = true;
+            nodeId = Integer.parseInt(args[1]);
+          }
         }
         try{
             Scanner sc=new Scanner(new File(args[0]));
-            nodes = parseLines(sc);
+            ArrayList<Node> nodes = parseLines(sc);
             HashMap<Integer, Integer> uids2ports = new HashMap<Integer, Integer>();
             HashMap<Integer, String> uids2hosts = new HashMap<Integer, String>();
             for(Node node: nodes){
@@ -25,7 +32,9 @@ public class DC_Project1 {
             System.out.println("\n Mapping from UIDs to Ports:");
             nodes.forEach(node -> System.out.println(node.uid + " -> " + uids2hosts.get(node.uid) + ":" + uids2ports.get(node.uid)));
             System.out.println();
+            
             for(Node node: nodes)
+              if(!distributed || node.uid == nodeId)
                 node.connectToNeighbors(uids2ports, uids2hosts);
         }
         catch(IOException e){
