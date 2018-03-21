@@ -19,21 +19,21 @@ PROG=DC_Project1
 
 JAR=$HOME/DC_Project1/dist/DC_Project1.jar
 
-n=6
+n=8
 
 cat $CONFIGLOCAL | sed -e "s/#.*//" | sed -e "/^\s*$/d" |
 (
     read i
     echo $i
-    while [[ $n -gt 0 ]]
+    while [[ $i -gt 0 ]]
     do
-    	echo $n
+    	echo $i
     	read line
     	node=$( echo $line | awk '{ print $1 }' )
         host=$( echo $line | awk '{ print $2 }' )
 	
 	gnome-terminal -e "ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $netid@$host java -jar $JAR $CONFIGLOCAL $node; $SHELL" &
 
-        n=$(( n - 1 ))
+        i=$(( i - 1 ))
     done
 )
