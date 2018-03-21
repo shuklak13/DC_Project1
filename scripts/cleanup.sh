@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Change this to your netid
+#netid=rkp170230
 netid=kxs141930
 
 # Root directory of your project
