@@ -35,6 +35,7 @@ class Node{
     public Node(int u, String hn, int p, boolean test) {
         this.test = test;
         uid = u;
+        System.out.println("Node " + uid + " started");
         if(test){
           hostname = "localhost";
           try{
