@@ -9,7 +9,7 @@ PROJDIR=$HOME/DC_Project1
 $PROJDIR/scripts/incr.sh
 
 # Directory where the config file is located on your local system
-CONFIGLOCAL=$HOME/DC_Project1/config/config2copy.txt
+CONFIGLOCAL=$HOME/DC_Project1/config/configDemo.txt
 
 # Directory your java classes are in
 javac $HOME/DC_Project1/src/dc_project1/*.java

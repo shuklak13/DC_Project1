@@ -2,7 +2,7 @@
 
 netid=kxs141930
 PROJDIR=$HOME/DC_Project1
-CONFIGLOCAL=$PROJDIR/config/config2copy.txt
+CONFIGLOCAL=$PROJDIR/config/configDemo.txt
 
 cat $CONFIGLOCAL | sed -e "s/#.*//" | sed -e "/^\s*$/d" |
 (
