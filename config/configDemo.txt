@@ -1,0 +1,26 @@
+# Number of nodes in the system
+10
+
+# Node#    Hostname          Port#
+   67 localhost 1234
+   73 localhost 1233
+   32 localhost 1231
+   191 localhost 1232
+   22 localhost 1237
+   451 localhost 1235
+   1131 localhost 1236
+   5 localhost 1230
+   12790 localhost 1250
+   587 localhost 1240
+
+# Node#   Neighbors
+  67 32 191
+  73 32 191 451 1131
+  32 67 73 451
+  191 67 73 1131
+  22 451 1131
+  451 22 32 73 587
+  1131 5 22 73 191
+  5 1131 12790
+  12790 5
+  587 451
