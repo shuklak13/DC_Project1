@@ -82,8 +82,11 @@ class Node{
         (new Thread() {
             @Override
             public void run() {
+              boolean successfullyConnected = false;
+              while(!successfullyConnected)
                 try {
                     Socket s = new Socket(hostname, port);
+                    successfullyConnected = true;
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
                     //while (!(terminated && b1.allNbrsAcked())) {
@@ -125,6 +128,8 @@ class Node{
         (new Thread() {
             @Override
             public void run() {
+              boolean successfullyConnected = false;
+              while(!successfullyConnected)
               try	{
                   ServerSocket ss = new ServerSocket(port);
                   while(!terminated)
@@ -133,6 +138,7 @@ class Node{
                         ClientManager w = new ClientManager(s, t);
                         Thread t = new Thread(w);
                         t.start();
+                        successfullyConnected = true;
                     } catch(IOException e) {
                         System.out.println("accept failed");
                         System.exit(100);
