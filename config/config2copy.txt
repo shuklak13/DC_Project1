@@ -1,22 +1,17 @@
-# Number of nodes in the system
 8
-
-# Node#    Hostname          Port#
-   5     dc02.utdallas.edu   1244
-   200   dc03.utdallas.edu   1243
-   8     dc04.utdallas.edu   1241
-   184   dc05.utdallas.edu   1242
-   9     dc06.utdallas.edu   1247
-   37    dc07.utdallas.edu   1245
-   78    dc08.utdallas.edu   1246
-   6     dc08.utdallas.edu   1240
-
-# Node#   Neighbors
-   5      200   8    78
-   200    5     37
-   8      5     9    37
-   184    37
-   9      8     37
-   37     200   8    184    9
-   78     5 6
-   6      78
+5 dc02.utdallas.edu 11374
+200 dc06.utdallas.edu 11373
+8 dc04.utdallas.edu 11371
+184 dc05.utdallas.edu 11372
+9 dc03.utdallas.edu 11377
+37 dc07.utdallas.edu 11375
+78 dc10.utdallas.edu 11376
+6 dc09.utdallas.edu 11370
+5 200 8 78
+200 5 37
+8 5 9 37
+184 37
+9 8 37
+37 200 8 184 9
+78 5 6
+6 78

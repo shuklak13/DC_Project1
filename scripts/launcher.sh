@@ -6,6 +6,7 @@ netid=kxs141930
 
 # Root directory of your project
 PROJDIR=$HOME/DC_Project1
+$PROJDIR/scripts/incr.sh
 
 # Directory where the config file is located on your local system
 CONFIGLOCAL=$HOME/DC_Project1/config/config2copy.txt
@@ -25,7 +26,7 @@ cat $CONFIGLOCAL | sed -e "s/#.*//" | sed -e "/^\s*$/d" |
     echo $i
     while [[ $i -gt 0 ]]
     do
-    	echo $line
+    	read line
     	node=$( echo $line | awk '{ print $1 }' )
         host=$( echo $line | awk '{ print $2 }' )
 	echo $i
