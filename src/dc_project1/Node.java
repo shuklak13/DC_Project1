@@ -161,6 +161,7 @@ class Node{
     }
     
     public void initiateBfs(){
+      System.out.println("Beginning BFS; leader is " + leader);
       synchronized(this){
         if(b1==null)
           b1 = new Bfs(isLeader(), neighbors, this);
