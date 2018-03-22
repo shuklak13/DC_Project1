@@ -85,7 +85,6 @@ class Node{
               boolean successfullyConnected = false;
               while(!successfullyConnected)
                 try {
-                    System.out.println(uid + " is connecting to " + hostname + ":" + port);
                     Socket s = new Socket(hostname, port);
                     successfullyConnected = true;
                     BufferedWriter out = new BufferedWriter(
@@ -116,7 +115,7 @@ class Node{
                 } catch (UnknownHostException e) {
                     e.printStackTrace();
                 } catch (IOException e) {
-                    //e.printStackTrace();
+                    e.printStackTrace();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -145,7 +144,7 @@ class Node{
                         System.exit(100);
                     }		
               } catch(IOException ex) {
-                  //ex.printStackTrace();
+                  ex.printStackTrace();
               }
             }
         }).start();
