@@ -78,15 +78,15 @@ class Node{
         System.out.println("ERROR: Node " + uid + " attempted to connect to neighbors, but has none");
     }
 
-    public void startSender(int rcvrport, String hostname, int neighborUID) {
+    public void startSender(int port, String hostname, int neighborUID) {
         (new Thread() {
             @Override
             public void run() {
               boolean successfullyConnected = false;
               while(!successfullyConnected)
                 try {
-                    System.out.println(uid + " is connecting to " + hostname + ":" + rcvrport);
-                    Socket s = new Socket(hostname, rcvrport);
+                    System.out.println(uid + " is connecting to " + hostname + ":" + port);
+                    Socket s = new Socket(hostname, port);
                     successfullyConnected = true;
                     BufferedWriter out = new BufferedWriter(
                             new OutputStreamWriter(s.getOutputStream()));
@@ -94,7 +94,7 @@ class Node{
                     while (true) {
                         if (leader==-1){
                           PelegMessage msg = p1.genMsg();
-                          writeToLog(p1.constructLogMsg_Send(msg, hostname, rcvrport));
+                          writeToLog(p1.constructLogMsg_Send(msg, hostname, port));
                           out.write(msg.toString());
                         }
                         else{
@@ -106,7 +106,7 @@ class Node{
                             terminated = true; 
                             System.out.println(b1.terminateString());
                           }
-                          writeToLog(b1.constructLogMsg_Send(msg, hostname, rcvrport));
+                          writeToLog(b1.constructLogMsg_Send(msg, hostname, port));
                           out.write(msg.toString());
                         }
                         out.newLine();
