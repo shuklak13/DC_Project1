@@ -70,9 +70,9 @@ class Node{
 
     public void connectToNeighbors(HashMap<Integer, Integer> uids2ports, HashMap<Integer, String> uids2hosts){
       if(neighbors!=null){
-        p1 = new Peleg(neighbors, this);
         for(int neigbhor: neighbors)
             startSender(uids2ports.get(neigbhor), uids2hosts.get(neigbhor), neigbhor);
+        p1 = new Peleg(neighbors, this);
       }
       else
         System.out.println("ERROR: Node " + uid + " attempted to connect to neighbors, but has none");
